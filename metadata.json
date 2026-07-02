@@ -1,0 +1,6 @@
+{
+  "name": "Imperial BaZi Chinese Astrology Calculator",
+  "description": "An SEO-optimized, highly accurate BaZi (Four Pillars of Destiny) Chinese Astrology birth chart calculator and comprehensive trait reading guide.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

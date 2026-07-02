@@ -1,0 +1,252 @@
+{
+  "jia-wood": {
+    "slug": "jia-wood",
+    "stem": "甲",
+    "name": "Jia Wood",
+    "pinyin": "Jiǎ",
+    "polarity": "Yang",
+    "element": "Wood",
+    "summary": "Represented by a tall, majestic tree (such as a giant redwood or oak), Jia Wood represents upward growth, strength, leadership, and unyielding determination.",
+    "personality": "Jia Wood individuals are born leaders, highly ambitious, and hold a deep sense of justice and integrity. Just like a tall tree, they stand straight, look far ahead, and provide shelter for others. However, they can be rigid and stubborn, finding it difficult to bend or adapt in times of sudden storm.",
+    "strengths": [
+      "Natural-born leaders who take responsibility easily.",
+      "Highly principled with a strong moral compass and direct honesty.",
+      "Ambitious and constantly striving for self-improvement and higher growth.",
+      "Protective of others, offering guidance and reliable support."
+    ],
+    "challenges": [
+      "Extremely stubborn and unyielding under pressure, sometimes breaking rather than bending.",
+      "Can be overly blunt or insensitive when expressing opinions.",
+      "Resistant to change, preferring long-term stability and slow growth over fast pivoting."
+    ],
+    "bestTenGods": "Enjoys the presence of Geng Metal (Yang Metal) to prune its branches into beautiful artwork, and Bing Fire (Yang Fire) to provide the solar warmth needed to blossom.",
+    "famousDynamics": "Strongly compatible with Ji Earth (Yin Earth) Day Masters, representing the union of tree roots finding fertile soil.",
+    "careerPath": "Thrives in structural leadership roles, long-term planning, research, environmental science, construction, or running a business where they can build a lasting legacy.",
+    "loveLife": "Loyal and steady partners who seek stable relationships. They need partners who respect their independence but offer emotional soil to ground them."
+  },
+  "yi-wood": {
+    "slug": "yi-wood",
+    "stem": "乙",
+    "name": "Yi Wood",
+    "pinyin": "Yǐ",
+    "polarity": "Yin",
+    "element": "Wood",
+    "summary": "Represented by flowers, ivy, creepers, or flexible grass, Yi Wood represents adaptability, diplomatic skill, artistic sensitivity, and resilient growth.",
+    "personality": "Unlike Jia Wood, Yi Wood is supple and flexible. Yi Wood individuals survive storms by bending with the wind. They are natural networkers, artistic, gentle, and highly intuitive. They achieve their goals through diplomacy and soft influence, often climbing to the top by wrapping themselves around stronger support systems.",
+    "strengths": [
+      "Incredibly resilient and highly adaptable to difficult environments.",
+      "Excellent social skills, diplomatic, and highly empathetic.",
+      "Creative, artistic, and possessing a highly refined aesthetic sense.",
+      "Resourceful, capable of finding alternative ways to succeed when blocked."
+    ],
+    "challenges": [
+      "Can be indecisive, easily swayed by the opinions of others.",
+      "May rely too much on others for support or security, showing dependency.",
+      "Can harbor hidden jealousy or passive-aggressiveness when their quiet efforts are ignored."
+    ],
+    "bestTenGods": "Loves the warmth of Bing Fire (Yang Fire) to help flowers bloom and the gentle moisture of Gui Water (Yin Water) to nourish its roots without drowning them.",
+    "famousDynamics": "Finds deep harmony with Geng Metal (Yang Metal) Day Masters, creating a classic attraction of metal and flexible vine.",
+    "careerPath": "Excels in creative arts, marketing, public relations, diplomacy, writing, design, botany, and roles requiring high emotional intelligence.",
+    "loveLife": "Affectionate and highly communicative. They appreciate partners who are stable, strong (like Jia Wood or Geng Metal), and can protect them while allowing them to bloom."
+  },
+  "bing-fire": {
+    "slug": "bing-fire",
+    "stem": "丙",
+    "name": "Bing Fire",
+    "pinyin": "Bǐng",
+    "polarity": "Yang",
+    "element": "Fire",
+    "summary": "Represented by the majestic Sun, Bing Fire represents warmth, clarity, boundless enthusiasm, transparency, and a vibrant public persona.",
+    "personality": "Bing Fire individuals are like the sun: bright, warm, generous, and impossible to ignore. They love to illuminate others, spread joy, and express themselves openly. They are direct, expressive, and possess high vitality. However, just like the sun, they can be overbearing, self-centered, and prone to burning out quickly.",
+    "strengths": [
+      "Extremely charismatic, cheerful, and filled with passion and enthusiasm.",
+      "Direct, transparent, and honest; they do not hide their intentions.",
+      "Generous and selfless, naturally helping others find their path.",
+      "Highly expressive, with a talent for commanding attention and performing."
+    ],
+    "challenges": [
+      "Can be impatient and quick-tempered, losing interest when excitement fades.",
+      "Prone to self-centeredness, expecting the world to revolve around them.",
+      "Vulnerable to burnout and emotional highs and lows."
+    ],
+    "bestTenGods": "Enjoys Ren Water (Yang Water) to reflect its brilliant solar light like a sparkling ocean, and Jia Wood (Yang Wood) to provide continuous fuel.",
+    "famousDynamics": "Deeply compatible with Xin Metal (Yin Metal), representing a powerful alchemical attraction of fire and precious jewelry.",
+    "careerPath": "Thrives in media, public speaking, entertainment, sales, education, politics, or any field where they can stand in the spotlight and inspire large groups.",
+    "loveLife": "Passionate, warm, and highly expressive. They fall in love quickly and bring immense warmth to a relationship, but need a partner who can match their high energy."
+  },
+  "ding-fire": {
+    "slug": "ding-fire",
+    "stem": "丁",
+    "name": "Ding Fire",
+    "pinyin": "Dīng",
+    "polarity": "Yin",
+    "element": "Fire",
+    "summary": "Represented by a flickering candle, a campfire, or starlight, Ding Fire represents deep intellect, spiritual awareness, sensitivity, and quiet guidance.",
+    "personality": "Ding Fire is warm, gentle, and introspective. While Bing Fire shines on everyone, Ding Fire is focused and selective, illuminating the dark for those close to them. They are deep thinkers, highly analytical, spiritually inclined, and intensely loyal. However, their emotions can be volatile, and they can be highly sensitive to slight environmental changes.",
+    "strengths": [
+      "Deeply intellectual, highly analytical, and detail-oriented.",
+      "Compassionate, providing quiet support, mentorship, and warmth.",
+      "Strongly intuitive, often drawn to spirituality, philosophy, or occult sciences.",
+      "Persistent; they keep burning quietly even under adverse conditions."
+    ],
+    "challenges": [
+      "Extremely sensitive and easily hurt by negative environments or criticism.",
+      "Can be highly suspicious, over-analyzing situations and people.",
+      "Prone to emotional mood swings, sometimes burning themselves out from worry."
+    ],
+    "bestTenGods": "Needs Jia Wood (Yang Wood) as firewood to sustain its flame and Geng Metal (Yang Metal) to chop the wood to fit the fireplace.",
+    "famousDynamics": "Perfectly matches with Ren Water (Yang Water), symbolizing a beautiful balance of fire and water under the starlit sky.",
+    "careerPath": "Excels in research, psychology, writing, spiritual teaching, financial analysis, programming, or roles where deep focus and mentorship are required.",
+    "loveLife": "Quietly passionate, intensely loyal, and deeply romantic. They take time to trust, but once they do, they are incredibly devoted and protective of their partner."
+  },
+  "wu-earth": {
+    "slug": "wu-earth",
+    "stem": "戊",
+    "name": "Wu Earth",
+    "pinyin": "Wù",
+    "polarity": "Yang",
+    "element": "Earth",
+    "summary": "Represented by a massive mountain or high plateau, Wu Earth represents stability, trustworthiness, endurance, and quiet wisdom.",
+    "personality": "Wu Earth individuals are solid as a rock. They are stable, dependable, and highly trustworthy, rarely moving once they make a decision. People naturally rely on them for strength and wisdom. They are protective, slow to anger, but when they do erupt (like a volcano), it is monumental. However, they can be highly conservative and stubborn, resisting change at all costs.",
+    "strengths": [
+      "Utterly reliable, loyal, and possess a solid, calming presence.",
+      "Excellent endurance and the ability to withstand immense pressure.",
+      "Wise, protective, and great at keeping secrets and maintaining order.",
+      "Honest and realistic, preferring practical solutions over empty promises."
+    ],
+    "challenges": [
+      "Exceedingly stubborn and highly resistant to new ideas or changes.",
+      "Can be passive or slow-moving, missing opportunities due to over-caution.",
+      "Prone to emotional stagnation, keeping worries bottled up inside."
+    ],
+    "bestTenGods": "Appreciates Jia Wood (Yang Wood) to plant trees on its mountain slopes (preventing landslide erosion) and Gui Water (Yin Water) to moisten its dry soil.",
+    "famousDynamics": "Attracted to Gui Water (Yin Water) Day Masters, forming a deeply stabilizing union of mountain and fresh mountain springs.",
+    "careerPath": "Thrives in asset management, civil engineering, real estate, banking, farming, archiving, history, or operations management where consistency is key.",
+    "loveLife": "Steady, loyal, and protective. They do not express love through flashy words, but through concrete, reliable actions. They seek long-term, stable partnerships."
+  },
+  "ji-earth": {
+    "slug": "ji-earth",
+    "stem": "己",
+    "name": "Ji Earth",
+    "pinyin": "Jǐ",
+    "polarity": "Yin",
+    "element": "Earth",
+    "summary": "Represented by fertile agricultural soil, wet garden mud, or clay, Ji Earth represents nurturing, flexibility, high tolerance, and resourcefulness.",
+    "personality": "Ji Earth individuals are natural nurturers. Like garden soil, they are quiet, highly tolerant, and capable of growing any seed planted in them. They are versatile, kind-hearted, multi-talented, and have a unique ability to digest complex information. However, they can be overly accommodating and worry too much, sometimes losing their own identity in service of others.",
+    "strengths": [
+      "Deeply nurturing, kind, patient, and highly compassionate.",
+      "Very adaptable and flexible, able to work with different personalities.",
+      "Resourceful and practical, with a strong ability to learn multiple skills.",
+      "Reliable, supportive, and excellent team players."
+    ],
+    "challenges": [
+      "Prone to excessive worrying, anxiety, and over-thinking.",
+      "Can be easily taken advantage of due to their overly accommodating nature.",
+      "May struggle with boundaries, absorbing other people's emotional trash."
+    ],
+    "bestTenGods": "Loves Bing Fire (Yang Fire) for the sunlight needed to fertilize soil, and Gui Water (Yin Water) to keep the agricultural land moist and fertile.",
+    "famousDynamics": "Strongly compatible with Jia Wood (Yang Wood), representing trees rooting deeply into fertile farm soil.",
+    "careerPath": "Excels in education, human resources, organic agriculture, counseling, medicine, social work, cooking, or any creative role requiring nurturing care.",
+    "loveLife": "Incredibly supportive and loving. They look after their partner's every need but must learn to establish healthy boundaries to avoid emotional drain."
+  },
+  "geng-metal": {
+    "slug": "geng-metal",
+    "stem": "庚",
+    "name": "Geng Metal",
+    "pinyin": "Gēng",
+    "polarity": "Yang",
+    "element": "Metal",
+    "summary": "Represented by raw steel, an axe, or unrefined iron ore, Geng Metal represents raw strength, chivalry, intense focus, and justice.",
+    "personality": "Geng Metal individuals are strong-willed, direct, and have a deep sense of justice and chivalry. They love challenges and are polished through hardship, like crude iron forged into a legendary sword. They are intensely loyal to friends, direct in speech, and highly decisive. However, they can be overly aggressive, blunt, and insensitive to others' feelings.",
+    "strengths": [
+      "Incredibly strong, courageous, and capable of enduring severe hardships.",
+      "Deep sense of justice, honesty, and chivalry; they hate unfairness.",
+      "Highly decisive, action-oriented, and excellent in crisis situations.",
+      "Loyal and protective of friends, standing up for the underdog."
+    ],
+    "challenges": [
+      "Can be extremely blunt, sharp-tongued, and emotionally cold.",
+      "Stubborn and destructive when angry, refusing to back down from a fight.",
+      "Sometimes overly rigid, struggling with soft diplomacy."
+    ],
+    "bestTenGods": "Needs Ding Fire (Yin Fire) to melt and forge it into a beautiful, useful tool, and Jia Wood (Yang Wood) to act as fuel for the furnace.",
+    "famousDynamics": "Finds perfect harmony with Yi Wood (Yin Wood), representing the balance of raw metal strength and gentle vine diplomacy.",
+    "careerPath": "Thrives in law, law enforcement, military, manufacturing, competitive sports, surgical medicine, engineering, or high-stakes corporate leadership.",
+    "loveLife": "Direct, loyal, and highly protective. They do not play mind games and value honesty above all. They express love through protection and standing by their partner."
+  },
+  "xin-metal": {
+    "slug": "xin-metal",
+    "stem": "辛",
+    "name": "Xin Metal",
+    "pinyin": "Xīn",
+    "polarity": "Yin",
+    "element": "Metal",
+    "summary": "Represented by polished jewelry, precious gems, gold coins, or delicate surgical knives, Xin Metal represents elegance, refinement, unique talent, and charisma.",
+    "personality": "Xin Metal individuals are elegant, sensitive, and love to shine. Like polished diamonds, they have a natural magnetism and appreciate the finer things in life. They are highly intuitive, articulate, and possess unique talents. However, they can be highly vain, overly critical of themselves and others, and require constant praise to maintain their self-esteem.",
+    "strengths": [
+      "Naturally elegant, charismatic, and loves to express unique talents.",
+      "Extremely sharp, detail-oriented, and possesses high aesthetic taste.",
+      "Articulate, often possessing persuasive speaking or writing abilities.",
+      "Strongly independent with a desire to stand out from the crowd."
+    ],
+    "challenges": [
+      "Can be vain, superficial, and overly concerned with status or appearances.",
+      "Extremely sensitive and holds grudges for a long time when insulted.",
+      "Can be overly critical and perfectionistic, demanding too much from others."
+    ],
+    "bestTenGods": "Loves Ren Water (Yang Water) to wash its gems clean so they can sparkle brilliantly, and likes gentle warm soil (Ji Earth) over heavy burying dust.",
+    "famousDynamics": "Strongly attracted to Bing Fire (Yang Fire), representing a dazzling solar shine reflecting off precious gold.",
+    "careerPath": "Excels in jewelry design, luxury retail, media, performance arts, public relations, plastic surgery, financial consulting, or dentistry.",
+    "loveLife": "Romantic, elegant, and desires attention. They need a partner who appreciates their unique sparkle, showers them with affection, and respects their independence."
+  },
+  "ren-water": {
+    "slug": "ren-water",
+    "stem": "壬",
+    "name": "Ren Water",
+    "pinyin": "Rén",
+    "polarity": "Yang",
+    "element": "Water",
+    "summary": "Represented by the mighty ocean, a roaring river, or a massive flood, Ren Water represents intelligence, freedom, dynamic movement, and charisma.",
+    "personality": "Ren Water individuals are energetic, clever, and freedom-loving. Like the ocean, they are vast, full of depth, and constantly in motion. They are natural adventurers, adapt quickly, and possess immense charisma that draws people in. However, they can be restless, unpredictable, and easily overwhelmed by their own vast emotional tides.",
+    "strengths": [
+      "Extremely intelligent, quick-witted, and highly strategic thinkers.",
+      "Adaptable, dynamic, and loves exploring new horizons.",
+      "Highly charismatic, persuasive, and excellent at rallying crowds.",
+      "Possesses immense inner depth, creativity, and wisdom."
+    ],
+    "challenges": [
+      "Can be highly restless, inconsistent, and struggling to stay in one place.",
+      "Unpredictable, changing moods rapidly like ocean waves.",
+      "Can become overbearing or rebellious when they feel their freedom is restricted."
+    ],
+    "bestTenGods": "Enjoys Wu Earth (Yang Earth) to act as solid riverbanks to channel its massive energy, and Bing Fire (Yang Fire) to heat its cold waters.",
+    "famousDynamics": "Deeply compatible with Ding Fire (Yin Fire), creating a beautiful spiritual union of oceanic currents and starlight reflections.",
+    "careerPath": "Thrives in international trade, shipping, strategic planning, media, tourism, philosophy, creative arts, or any role allowing travel and autonomy.",
+    "loveLife": "Passionate, freedom-loving, and romantic. They need partners who do not try to cage them, but instead swim with them in their deep ocean of ideas."
+  },
+  "gui-water": {
+    "slug": "gui-water",
+    "stem": "癸",
+    "name": "Gui Water",
+    "pinyin": "Guǐ",
+    "polarity": "Yin",
+    "element": "Water",
+    "summary": "Represented by gentle morning mist, rain, dew, or a clear mountain spring, Gui Water represents deep intuition, wisdom, gentleness, and mystery.",
+    "personality": "Gui Water individuals are the most intuitive of all Day Masters. Like dew or mist, they are quiet, gentle, highly observant, and possess a mysterious depth. They are highly imaginative, empathetic, and flexible, capable of infiltrating any space quietly. However, they can be highly secretive, prone to melancholy, and easily influenced by their surroundings.",
+    "strengths": [
+      "Highly intuitive, possessing deep spiritual or emotional wisdom.",
+      "Gentle, empathetic, and excellent at listening and counseling others.",
+      "Very flexible, adaptive, and able to work behind the scenes quietly.",
+      "Rich imagination, creativity, and intellectual depth."
+    ],
+    "challenges": [
+      "Highly secretive, sometimes hard for even close partners to truly understand.",
+      "Prone to anxiety, moodiness, and absorbing negative energies around them.",
+      "Can be overly passive, escaping into their dream world instead of taking action."
+    ],
+    "bestTenGods": "Appreciates Geng Metal (Yang Metal) to act as a pure, clean spring water source, and Bing Fire (Yang Fire) to warm up its cold morning mists.",
+    "famousDynamics": "Strongly compatible with Wu Earth (Yang Earth), forming a perfect union of mountain springs and majestic peaks.",
+    "careerPath": "Excels in research, counseling, psychology, creative writing, artistic design, spiritual coaching, strategy, or environmental fields.",
+    "loveLife": "Sensitive, quiet, and deeply spiritual. They seek an intellectual and soul connection, requiring a supportive, grounding partner who makes them feel safe."
+  }
+}
