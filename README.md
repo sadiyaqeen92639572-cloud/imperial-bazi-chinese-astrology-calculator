@@ -1,20 +1,27 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Four Pillars Calculator — Bazi Chinese Astrology
 
-# Run and deploy your AI Studio app
+Free Bazi Four Pillars of Destiny calculator. Enter your birth date and time to get your full Chinese astrology chart: Day Master, Ten Gods, element balance, and 10-year luck pillars.
 
-This contains everything you need to run your app locally.
+**Live:** [fourpillarscalculator.com](https://fourpillarscalculator.com)
 
-View your app in AI Studio: https://ai.studio/apps/bc110023-6917-408f-9b09-e930b0ef051c
+## Features
+
+- Full 8-character Bazi chart (Year, Month, Day, Hour pillars)
+- Day Master identification with element and polarity
+- Ten Gods analysis for every stem
+- Day Master strength score (Strong / Balanced / Weak)
+- Useful God (Yong Shen) recommendation
+- Element balance chart across all pillars
+- 10-year Luck Pillar timeline
+- Hidden Stems in Earthly Branches
+
+## Free Companion Tools
+
+- [Bazi Day Master Calculator](https://sadiyaqeen92639572-cloud.github.io/four-pillars-day-master/) — Find your Day Stem, element, and personality profile from your birth date. Powered by [fourpillarscalculator.com](https://fourpillarscalculator.com).
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
+**Prerequisites:** Node.js
 
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+1. Install dependencies: `npm install`
+2. Run the app: `npm run dev`
