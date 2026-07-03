@@ -38,11 +38,11 @@ export async function generateMetadata({ params }: StemPageProps): Promise<Metad
   return {
     title: `${asciiStem} ${dm.element} Day Master: Personality, Career, and Love`,
     description: `Detailed profile of the ${asciiStem} ${dm.element} (${dm.polarity}) Day Master in classical BaZi. Discover psychological traits, optimal careers, and relationship compatibility.`,
-    alternates: { canonical: `https://imperialbazi.com/bazi/day-master/${stem}/` },
+    alternates: { canonical: `https://fourpillarscalculator.com/bazi/day-master/${stem}/` },
     openGraph: {
       title: `${asciiStem} ${dm.element} Day Master: Personality, Career, and Love`,
       description: `Detailed profile of the ${asciiStem} ${dm.element} (${dm.polarity}) Day Master in classical BaZi. Discover psychological traits, optimal careers, and relationship compatibility.`,
-      url: `https://imperialbazi.com/bazi/day-master/${stem}/`,
+      url: `https://fourpillarscalculator.com/bazi/day-master/${stem}/`,
       siteName: 'Imperial Bazi',
       type: 'website',
     },
@@ -59,7 +59,7 @@ export default async function DayMasterDetailPage({ params }: StemPageProps) {
 
   const elColor = ELEMENTS_MAP[dm.element]?.color;
   const asciiStem = STEMS_MAP[dm.stem]?.en || dm.stem;
-  const url = `https://imperialbazi.com/bazi/day-master/${stem}/`;
+  const url = `https://fourpillarscalculator.com/bazi/day-master/${stem}/`;
   const articleSchema = getArticleSchema(
     `${asciiStem} ${dm.element} Day Master: Complete Astrological Profile`,
     `Detailed profile of the ${asciiStem} ${dm.element} (${dm.polarity}) Day Master in classical BaZi. Discover psychological traits, optimal careers, and relationship compatibility.`,

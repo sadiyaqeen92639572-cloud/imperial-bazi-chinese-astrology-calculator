@@ -8,11 +8,11 @@ import { Compass, BookOpen, Clock } from 'lucide-react';
 export const metadata = {
   title: 'Free BaZi Calculator - Accurate Four Pillars of Destiny Chart',
   description: 'Calculate your accurate Chinese astrology BaZi chart. Enter date, time, and birthplace longitude to find your Day Master, element balance, and 10-year luck pillars.',
-  alternates: { canonical: 'https://imperialbazi.com/bazi-calculator/' },
+  alternates: { canonical: 'https://fourpillarscalculator.com/bazi-calculator/' },
   openGraph: {
     title: 'Free BaZi Calculator - Accurate Four Pillars of Destiny Chart',
     description: 'Calculate your accurate Chinese astrology BaZi chart. Enter date, time, and birthplace longitude to find your Day Master, element balance, and 10-year luck pillars.',
-    url: 'https://imperialbazi.com/bazi-calculator/',
+    url: 'https://fourpillarscalculator.com/bazi-calculator/',
     siteName: 'Imperial Bazi',
     type: 'website',
   },
@@ -22,7 +22,7 @@ export default function BaziCalculatorPage() {
   const applicationSchema = getSoftwareApplicationSchema(
     'Imperial BaZi Destiny Calculator',
     'Calculate your four pillars of destiny chart, find your Day Master strength, count elements balance, and map out your ten-year luck cycles.',
-    'https://imperialbazi.com/bazi-calculator/'
+    'https://fourpillarscalculator.com/bazi-calculator/'
   );
 
   const faqSchema = getFAQPageSchema(FAQ_DATA.slice(0, 4));

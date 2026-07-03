@@ -26,7 +26,7 @@ export function getArticleSchema(title: string, description: string, url: string
     '@type': 'Article',
     'headline': title,
     'description': description,
-    'image': image || 'https://imperialbazi.com/og-image.jpg',
+    'image': image || 'https://fourpillarscalculator.com/og-image.jpg',
     'author': {
       '@type': 'Organization',
       'name': 'Imperial BaZi'
@@ -36,7 +36,7 @@ export function getArticleSchema(title: string, description: string, url: string
       'name': 'Imperial BaZi',
       'logo': {
         '@type': 'ImageObject',
-        'url': 'https://imperialbazi.com/logo.png'
+        'url': 'https://fourpillarscalculator.com/logo.png'
       }
     },
     'mainEntityOfPage': {

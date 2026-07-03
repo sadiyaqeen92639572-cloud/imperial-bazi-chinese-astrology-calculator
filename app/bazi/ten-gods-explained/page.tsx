@@ -7,18 +7,18 @@ import { Shield, Coins, Sparkles, BookOpen, GraduationCap } from 'lucide-react';
 export const metadata = {
   title: 'The 10 Gods in BaZi Explained (Simple Guide)',
   description: 'Learn the Ten Gods (Shi Shen) in BaZi — Friend, Rob Wealth, Eating God, Hurting Officer, and more — explained clearly without complex jargon.',
-  alternates: { canonical: 'https://imperialbazi.com/bazi/ten-gods-explained/' },
+  alternates: { canonical: 'https://fourpillarscalculator.com/bazi/ten-gods-explained/' },
   openGraph: {
     title: 'The 10 Gods in BaZi Explained (Simple Guide)',
     description: 'Learn the Ten Gods (Shi Shen) in BaZi — Friend, Rob Wealth, Eating God, Hurting Officer, and more — explained clearly without complex jargon.',
-    url: 'https://imperialbazi.com/bazi/ten-gods-explained/',
+    url: 'https://fourpillarscalculator.com/bazi/ten-gods-explained/',
     siteName: 'Imperial Bazi',
     type: 'website',
   },
 };
 
 export default function TenGodsExplainedPage() {
-  const url = 'https://imperialbazi.com/bazi/ten-gods-explained/';
+  const url = 'https://fourpillarscalculator.com/bazi/ten-gods-explained/';
   const articleSchema = getArticleSchema(
     'The 10 Gods in BaZi Explained (Simple Guide)',
     'Learn the Ten Gods (Shi Shen) in BaZi — Friend, Rob Wealth, Eating God, Hurting Officer, and more — explained clearly without complex jargon.',

@@ -40,7 +40,7 @@ const STEM_SLUGS = [
 ];
 
 export async function GET(req: NextRequest) {
-  const appUrl = 'https://imperialbazi.com';
+  const appUrl = 'https://fourpillarscalculator.com';
 
   const xmlUrls = [
     ...STATIC_ROUTES.map(route => `

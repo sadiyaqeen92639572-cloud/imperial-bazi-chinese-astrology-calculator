@@ -9,18 +9,18 @@ import { Sparkles, ArrowRight } from 'lucide-react';
 export const metadata = {
   title: 'The 10 Day Masters of Chinese Astrology: Deep Profiles',
   description: 'Explore deep profiles for the 10 Day Masters (Heavenly Stems) in Chinese astrology — Jia Wood, Yi Wood, Bing Fire, Ding Fire, and more.',
-  alternates: { canonical: 'https://imperialbazi.com/bazi/day-master/' },
+  alternates: { canonical: 'https://fourpillarscalculator.com/bazi/day-master/' },
   openGraph: {
     title: 'The 10 Day Masters of Chinese Astrology: Deep Profiles',
     description: 'Explore deep profiles for the 10 Day Masters (Heavenly Stems) in Chinese astrology — Jia Wood, Yi Wood, Bing Fire, Ding Fire, and more.',
-    url: 'https://imperialbazi.com/bazi/day-master/',
+    url: 'https://fourpillarscalculator.com/bazi/day-master/',
     siteName: 'Imperial Bazi',
     type: 'website',
   },
 };
 
 export default function DayMastersHubPage() {
-  const url = 'https://imperialbazi.com/bazi/day-master/';
+  const url = 'https://fourpillarscalculator.com/bazi/day-master/';
   const collectionSchema = getCollectionPageSchema(
     'The 10 Day Masters of Chinese Astrology',
     'Explore deep profiles for the 10 Day Masters (Heavenly Stems) in Chinese astrology.',

@@ -5,11 +5,11 @@ import { getArticleSchema } from '@/lib/seo';
 export const metadata = {
   title: 'BaZi Reading: What to Expect and How to Prepare',
   description: 'Everything you need to know before getting your first BaZi reading. Learn to read and interpret a professional Chinese astrology chart.',
-  alternates: { canonical: 'https://imperialbazi.com/bazi-reading/' },
+  alternates: { canonical: 'https://fourpillarscalculator.com/bazi-reading/' },
   openGraph: {
     title: 'BaZi Reading: What to Expect and How to Prepare',
     description: 'Everything you need to know before getting your first BaZi reading. Learn to read and interpret a professional Chinese astrology chart.',
-    url: 'https://imperialbazi.com/bazi-reading/',
+    url: 'https://fourpillarscalculator.com/bazi-reading/',
     siteName: 'Imperial Bazi',
     type: 'website',
   },
@@ -19,7 +19,7 @@ export default function BaziReadingPage() {
   const jsonLd = getArticleSchema(
     'BaZi Reading: What to Expect and How to Prepare',
     'Everything you need to know before getting your first BaZi reading. Learn to read and interpret a professional Chinese astrology chart.',
-    'https://imperialbazi.com/bazi-reading/'
+    'https://fourpillarscalculator.com/bazi-reading/'
   );
   return (
     <>

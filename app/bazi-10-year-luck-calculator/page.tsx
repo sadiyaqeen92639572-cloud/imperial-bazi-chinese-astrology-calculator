@@ -8,11 +8,11 @@ import { Compass } from 'lucide-react';
 export const metadata = {
   title: 'BaZi 10-Year Luck Cycle Calculator - Map Your Lifecycles',
   description: 'Calculate your 10-year major Luck Pillars (Da Yun) in Chinese Solar Astrology. Discover the cosmic weather affecting your lifepath decades.',
-  alternates: { canonical: 'https://imperialbazi.com/bazi-10-year-luck-calculator/' },
+  alternates: { canonical: 'https://fourpillarscalculator.com/bazi-10-year-luck-calculator/' },
   openGraph: {
     title: 'BaZi 10-Year Luck Cycle Calculator - Map Your Lifecycles',
     description: 'Calculate your 10-year major Luck Pillars (Da Yun) in Chinese Solar Astrology. Discover the cosmic weather affecting your lifepath decades.',
-    url: 'https://imperialbazi.com/bazi-10-year-luck-calculator/',
+    url: 'https://fourpillarscalculator.com/bazi-10-year-luck-calculator/',
     siteName: 'Imperial Bazi',
     type: 'website',
   },
@@ -22,7 +22,7 @@ export default function LuckCalculatorPage() {
   const applicationSchema = getSoftwareApplicationSchema(
     'BaZi 10-Year Luck Cycle Calculator',
     'Calculate your 10-year major Luck Pillars (Da Yun) and map out the timing of your life waves.',
-    'https://imperialbazi.com/bazi-10-year-luck-calculator/'
+    'https://fourpillarscalculator.com/bazi-10-year-luck-calculator/'
   );
 
   const faqSchema = getFAQPageSchema(FAQ_DATA.filter(faq => faq.question.includes('Luck Pillars') || faq.question.includes('forecast')));

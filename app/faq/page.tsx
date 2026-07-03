@@ -7,11 +7,11 @@ import { HelpCircle } from 'lucide-react';
 export const metadata = {
   title: 'BaZi FAQ: Common Chinese Astrology Questions Answered',
   description: 'Find answers to common questions about Chinese Solar Astrology, local solar time adjustments, luck pillars, and relationship matching.',
-  alternates: { canonical: 'https://imperialbazi.com/faq/' },
+  alternates: { canonical: 'https://fourpillarscalculator.com/faq/' },
   openGraph: {
     title: 'BaZi FAQ: Common Chinese Astrology Questions Answered',
     description: 'Find answers to common questions about Chinese Solar Astrology, local solar time adjustments, luck pillars, and relationship matching.',
-    url: 'https://imperialbazi.com/faq/',
+    url: 'https://fourpillarscalculator.com/faq/',
     siteName: 'Imperial Bazi',
     type: 'website',
   },

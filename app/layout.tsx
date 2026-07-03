@@ -3,20 +3,20 @@ import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
-// TODO: add GSC verification tag for imperialbazi.com
 export const metadata: Metadata = {
   title: 'Imperial BaZi - Professional Chinese Astrology Calculator',
   description: 'Free professional-grade BaZi (Four Pillars of Destiny) calculator and astrology interpretation guide in clean, modern English.',
-  metadataBase: new URL('https://imperialbazi.com'),
-  alternates: { canonical: 'https://imperialbazi.com' },
+  metadataBase: new URL('https://fourpillarscalculator.com'),
+  alternates: { canonical: 'https://fourpillarscalculator.com' },
   openGraph: {
     title: 'Imperial BaZi - Professional Chinese Astrology Calculator',
     description: 'Free professional-grade BaZi (Four Pillars of Destiny) calculator and astrology interpretation guide in clean, modern English.',
-    url: 'https://imperialbazi.com',
+    url: 'https://fourpillarscalculator.com',
     siteName: 'Imperial Bazi',
     type: 'website',
   },
   twitter: { card: 'summary_large_image' },
+  verification: { google: '9_5I2PdRH9zDVCNof-NAkALskfkDyQZI-sQ1I1qVDy4' },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

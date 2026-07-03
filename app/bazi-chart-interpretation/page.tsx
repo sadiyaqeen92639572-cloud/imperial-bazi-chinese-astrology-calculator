@@ -5,11 +5,11 @@ import { getArticleSchema } from '@/lib/seo';
 export const metadata = {
   title: 'BaZi Chart Interpretation Guide: Pillar by Pillar',
   description: 'Dive deep into your BaZi chart structure. Understand what the Year, Month, Day, and Hour pillars represent in your life and career.',
-  alternates: { canonical: 'https://imperialbazi.com/bazi-chart-interpretation/' },
+  alternates: { canonical: 'https://fourpillarscalculator.com/bazi-chart-interpretation/' },
   openGraph: {
     title: 'BaZi Chart Interpretation Guide: Pillar by Pillar',
     description: 'Dive deep into your BaZi chart structure. Understand what the Year, Month, Day, and Hour pillars represent in your life and career.',
-    url: 'https://imperialbazi.com/bazi-chart-interpretation/',
+    url: 'https://fourpillarscalculator.com/bazi-chart-interpretation/',
     siteName: 'Imperial Bazi',
     type: 'website',
   },
@@ -19,7 +19,7 @@ export default function BaziChartInterpretationPage() {
   const jsonLd = getArticleSchema(
     'BaZi Chart Interpretation Guide: Pillar by Pillar',
     'Dive deep into your BaZi chart structure. Understand what the Year, Month, Day, and Hour pillars represent in your life and career.',
-    'https://imperialbazi.com/bazi-chart-interpretation/'
+    'https://fourpillarscalculator.com/bazi-chart-interpretation/'
   );
   return (
     <>

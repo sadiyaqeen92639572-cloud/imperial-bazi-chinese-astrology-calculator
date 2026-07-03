@@ -8,11 +8,11 @@ import { Sparkles } from 'lucide-react';
 export const metadata = {
   title: 'BaZi Day Master Calculator - Find Your True Self Element',
   description: 'Calculate your true Day Master (Day Stem) in Chinese Astrology. Find your elemental identity and traits among the 10 Stems.',
-  alternates: { canonical: 'https://imperialbazi.com/bazi-day-master-calculator/' },
+  alternates: { canonical: 'https://fourpillarscalculator.com/bazi-day-master-calculator/' },
   openGraph: {
     title: 'BaZi Day Master Calculator - Find Your True Self Element',
     description: 'Calculate your true Day Master (Day Stem) in Chinese Astrology. Find your elemental identity and traits among the 10 Stems.',
-    url: 'https://imperialbazi.com/bazi-day-master-calculator/',
+    url: 'https://fourpillarscalculator.com/bazi-day-master-calculator/',
     siteName: 'Imperial Bazi',
     type: 'website',
   },
@@ -22,7 +22,7 @@ export default function DayMasterCalculatorPage() {
   const applicationSchema = getSoftwareApplicationSchema(
     'BaZi Day Master Calculator',
     'Calculate your primary Day Master (the Day Stem of your Four Pillars birth chart) and discover your personal traits.',
-    'https://imperialbazi.com/bazi-day-master-calculator/'
+    'https://fourpillarscalculator.com/bazi-day-master-calculator/'
   );
 
   const faqSchema = getFAQPageSchema(FAQ_DATA.filter(faq => faq.question.includes('Day Master')));

@@ -6,18 +6,18 @@ import { Compass, Sparkles, Check, AlertTriangle } from 'lucide-react';
 export const metadata = {
   title: 'Useful God in BaZi: What It Means and How to Find It',
   description: 'Understand the Useful God (Yong Shen) concept in BaZi and how it determines your favorable and unfavorable elements to unlock smooth fortune.',
-  alternates: { canonical: 'https://imperialbazi.com/bazi/useful-god-explained/' },
+  alternates: { canonical: 'https://fourpillarscalculator.com/bazi/useful-god-explained/' },
   openGraph: {
     title: 'Useful God in BaZi: What It Means and How to Find It',
     description: 'Understand the Useful God (Yong Shen) concept in BaZi and how it determines your favorable and unfavorable elements to unlock smooth fortune.',
-    url: 'https://imperialbazi.com/bazi/useful-god-explained/',
+    url: 'https://fourpillarscalculator.com/bazi/useful-god-explained/',
     siteName: 'Imperial Bazi',
     type: 'website',
   },
 };
 
 export default function UsefulGodExplainedPage() {
-  const url = 'https://imperialbazi.com/bazi/useful-god-explained/';
+  const url = 'https://fourpillarscalculator.com/bazi/useful-god-explained/';
   const articleSchema = getArticleSchema(
     'Useful God in BaZi: What It Means and How to Find It',
     'Understand the Useful God (Yong Shen) concept in BaZi and how it determines your favorable and unfavorable elements to unlock smooth fortune.',

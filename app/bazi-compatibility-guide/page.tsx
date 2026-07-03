@@ -5,11 +5,11 @@ import { getArticleSchema } from '@/lib/seo';
 export const metadata = {
   title: 'BaZi Compatibility Guide: How to Assess Relationships',
   description: 'Learn to use BaZi to assess romantic, professional, and family compatibility. A practical Chinese astrology guide to interpersonal dynamics.',
-  alternates: { canonical: 'https://imperialbazi.com/bazi-compatibility-guide/' },
+  alternates: { canonical: 'https://fourpillarscalculator.com/bazi-compatibility-guide/' },
   openGraph: {
     title: 'BaZi Compatibility Guide: How to Assess Relationships',
     description: 'Learn to use BaZi to assess romantic, professional, and family compatibility. A practical Chinese astrology guide to interpersonal dynamics.',
-    url: 'https://imperialbazi.com/bazi-compatibility-guide/',
+    url: 'https://fourpillarscalculator.com/bazi-compatibility-guide/',
     siteName: 'Imperial Bazi',
     type: 'website',
   },
@@ -19,7 +19,7 @@ export default function BaziCompatibilityGuidePage() {
   const jsonLd = getArticleSchema(
     'BaZi Compatibility Guide: How to Assess Relationships',
     'Learn to use BaZi to assess romantic, professional, and family compatibility. A practical Chinese astrology guide to interpersonal dynamics.',
-    'https://imperialbazi.com/bazi-compatibility-guide/'
+    'https://fourpillarscalculator.com/bazi-compatibility-guide/'
   );
   return (
     <>

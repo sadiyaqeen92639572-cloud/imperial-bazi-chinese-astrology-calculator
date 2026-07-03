@@ -8,11 +8,11 @@ import { Compass } from 'lucide-react';
 export const metadata = {
   title: 'Four Pillars of Destiny Calculator - Chinese Astrology Birth Chart',
   description: 'Generate your complete Four Pillars of Destiny (Sì Zhù) Chinese Astrology birth chart. Decode Year, Month, Day, and Hour columns with full hidden stems and deities.',
-  alternates: { canonical: 'https://imperialbazi.com/four-pillars-of-destiny-calculator/' },
+  alternates: { canonical: 'https://fourpillarscalculator.com/four-pillars-of-destiny-calculator/' },
   openGraph: {
     title: 'Four Pillars of Destiny Calculator - Chinese Astrology Birth Chart',
     description: 'Generate your complete Four Pillars of Destiny (Sì Zhù) Chinese Astrology birth chart. Decode Year, Month, Day, and Hour columns with full hidden stems and deities.',
-    url: 'https://imperialbazi.com/four-pillars-of-destiny-calculator/',
+    url: 'https://fourpillarscalculator.com/four-pillars-of-destiny-calculator/',
     siteName: 'Imperial Bazi',
     type: 'website',
   },
@@ -22,7 +22,7 @@ export default function FourPillarsCalculatorPage() {
   const applicationSchema = getSoftwareApplicationSchema(
     'Four Pillars of Destiny Calculator',
     'Calculate your four pillars of destiny chart, find stems and branches, and identify hidden elements.',
-    'https://imperialbazi.com/four-pillars-of-destiny-calculator/'
+    'https://fourpillarscalculator.com/four-pillars-of-destiny-calculator/'
   );
 
   const faqSchema = getFAQPageSchema(FAQ_DATA.slice(0, 3));

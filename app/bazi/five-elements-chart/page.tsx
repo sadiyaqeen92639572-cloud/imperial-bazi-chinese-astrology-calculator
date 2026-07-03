@@ -7,18 +7,18 @@ import { Compass, Sparkles, RefreshCw, AlertTriangle } from 'lucide-react';
 export const metadata = {
   title: 'BaZi Five Elements Chart and Balance Explained',
   description: 'See how Wood, Fire, Earth, Metal, and Water interact in your BaZi chart, and what element imbalances mean for your personality.',
-  alternates: { canonical: 'https://imperialbazi.com/bazi/five-elements-chart/' },
+  alternates: { canonical: 'https://fourpillarscalculator.com/bazi/five-elements-chart/' },
   openGraph: {
     title: 'BaZi Five Elements Chart and Balance Explained',
     description: 'See how Wood, Fire, Earth, Metal, and Water interact in your BaZi chart, and what element imbalances mean for your personality.',
-    url: 'https://imperialbazi.com/bazi/five-elements-chart/',
+    url: 'https://fourpillarscalculator.com/bazi/five-elements-chart/',
     siteName: 'Imperial Bazi',
     type: 'website',
   },
 };
 
 export default function FiveElementsChartPage() {
-  const url = 'https://imperialbazi.com/bazi/five-elements-chart/';
+  const url = 'https://fourpillarscalculator.com/bazi/five-elements-chart/';
   const articleSchema = getArticleSchema(
     'BaZi Five Elements Chart and Balance Explained',
     'See how Wood, Fire, Earth, Metal, and Water interact in your BaZi chart, and what element imbalances mean for your personality.',

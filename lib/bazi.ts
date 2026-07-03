@@ -181,7 +181,7 @@ export function calculateBazi(
     birthDate.getSeconds()
   );
   const lunar = solar.getLunar();
-  const bazi = lunar.getEightCharacters();
+  const bazi = lunar.getEightChar();
 
   // Retrieve stems and branches
   const yStem = bazi.getYearGan();
@@ -414,15 +414,16 @@ export function calculateBazi(
   const luckPillars: LuckPillarDetail[] = [];
 
   try {
-    const rawLuck = bazi.getLuck(gCode);
-    const rawDaYuns = rawLuck.getDaYun();
+    const rawYun = bazi.getYun(gCode, solar);
+    const rawDaYuns = rawYun.getDaYun();
     // Limit to first 8 DaYun cycles (80 years)
     for (let i = 0; i < Math.min(rawDaYuns.length, 8); i++) {
       const dy = rawDaYuns[i];
       const startAge = dy.getStartAge();
       const startYear = dy.getStartYear();
-      const dyStem = dy.getGan();
-      const dyBranch = dy.getZhi();
+      const ganZhi: string = dy.getGanZhi() || '';
+      const dyStem = ganZhi.charAt(0) || '?';
+      const dyBranch = ganZhi.charAt(1) || '?';
 
       const stemMap = STEMS_MAP[dyStem] || { en: '?', element: '?', polarity: 'Yang' as const };
       const branchMap = BRANCHES_MAP[dyBranch] || { en: '?', element: '?', polarity: 'Yang' as const, animal: '?' };

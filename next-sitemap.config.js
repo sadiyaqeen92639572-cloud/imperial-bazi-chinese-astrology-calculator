@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://imperialbazi.com',
+  siteUrl: 'https://fourpillarscalculator.com',
   generateRobotsTxt: false,
   generateIndexSitemap: false,
   exclude: ['/api/*'],

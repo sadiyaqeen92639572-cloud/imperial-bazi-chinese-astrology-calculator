@@ -7,18 +7,18 @@ import { BookOpen } from 'lucide-react';
 export const metadata = {
   title: 'BaZi and Chinese Astrology Glossary: Core Terms Explained',
   description: 'Search and read definitions for major terms in Chinese metaphysics, including Stems, Branches, Luck Pillars, and Five Elements.',
-  alternates: { canonical: 'https://imperialbazi.com/glossary/' },
+  alternates: { canonical: 'https://fourpillarscalculator.com/glossary/' },
   openGraph: {
     title: 'BaZi and Chinese Astrology Glossary: Core Terms Explained',
     description: 'Search and read definitions for major terms in Chinese metaphysics, including Stems, Branches, Luck Pillars, and Five Elements.',
-    url: 'https://imperialbazi.com/glossary/',
+    url: 'https://fourpillarscalculator.com/glossary/',
     siteName: 'Imperial Bazi',
     type: 'website',
   },
 };
 
 export default function GlossaryPage() {
-  const url = 'https://imperialbazi.com/glossary/';
+  const url = 'https://fourpillarscalculator.com/glossary/';
   
   const glossaryList = Object.values(GLOSSARY_DATA).map(item => ({
     term: item.term,

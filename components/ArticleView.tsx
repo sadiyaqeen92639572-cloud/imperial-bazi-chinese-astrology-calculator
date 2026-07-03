@@ -22,7 +22,7 @@ export default function ArticleView({ slug }: ArticleViewProps) {
   }
 
   // Schema generation
-  const appUrl = 'https://imperialbazi.com';
+  const appUrl = 'https://fourpillarscalculator.com';
   const url = `${appUrl}/${slug}/`;
   const schema = article.schemaType === 'HowTo'
     ? getHowToSchema(

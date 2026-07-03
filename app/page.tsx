@@ -8,23 +8,23 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Imperial BaZi - Free Chinese Astrology Calculator',
   description: 'Free professional-grade BaZi (Four Pillars of Destiny) calculator and astrology interpretation guide in clean, modern English.',
-  alternates: { canonical: 'https://imperialbazi.com/' },
+  alternates: { canonical: 'https://fourpillarscalculator.com/' },
   openGraph: {
     title: 'Imperial BaZi - Free Chinese Astrology Calculator',
     description: 'Free professional-grade BaZi (Four Pillars of Destiny) calculator and astrology interpretation guide in clean, modern English.',
-    url: 'https://imperialbazi.com/',
+    url: 'https://fourpillarscalculator.com/',
     siteName: 'Imperial Bazi',
     type: 'website',
-    images: [{ url: 'https://imperialbazi.com/og-image.jpg', width: 1200, height: 630 }],
+    images: [{ url: 'https://fourpillarscalculator.com/og-image.jpg', width: 1200, height: 630 }],
   },
-  twitter: { card: 'summary_large_image', images: ['https://imperialbazi.com/og-image.jpg'] },
+  twitter: { card: 'summary_large_image', images: ['https://fourpillarscalculator.com/og-image.jpg'] },
 };
 
 export default function HomePage() {
   const applicationSchema = getSoftwareApplicationSchema(
     'Imperial BaZi Calculator',
     'Professional-grade Chinese astrology destiny analysis (Four Pillars of Destiny) calculator in clean, modern English.',
-    'https://imperialbazi.com'
+    'https://fourpillarscalculator.com'
   );
 
   const faqSchema = getFAQPageSchema(FAQ_DATA.slice(0, 3));

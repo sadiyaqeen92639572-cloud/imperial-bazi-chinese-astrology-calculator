@@ -8,11 +8,11 @@ import { Heart } from 'lucide-react';
 export const metadata = {
   title: 'BaZi Compatibility Calculator - Marriage & Relationship Chemistry',
   description: 'Calculate detailed relationship and marriage compatibility between two BaZi birth charts. Discover Day Master matching, spouse house combinations, and clashes.',
-  alternates: { canonical: 'https://imperialbazi.com/bazi-compatibility-calculator/' },
+  alternates: { canonical: 'https://fourpillarscalculator.com/bazi-compatibility-calculator/' },
   openGraph: {
     title: 'BaZi Compatibility Calculator - Marriage & Relationship Chemistry',
     description: 'Calculate detailed relationship and marriage compatibility between two BaZi birth charts. Discover Day Master matching, spouse house combinations, and clashes.',
-    url: 'https://imperialbazi.com/bazi-compatibility-calculator/',
+    url: 'https://fourpillarscalculator.com/bazi-compatibility-calculator/',
     siteName: 'Imperial Bazi',
     type: 'website',
   },
@@ -22,7 +22,7 @@ export default function CompatibilityCalculatorPage() {
   const applicationSchema = getSoftwareApplicationSchema(
     'BaZi Compatibility Calculator',
     'Calculate and evaluate relationship chemistry and compatibility between two BaZi solar astrology charts.',
-    'https://imperialbazi.com/bazi-compatibility-calculator/'
+    'https://fourpillarscalculator.com/bazi-compatibility-calculator/'
   );
 
   const faqSchema = getFAQPageSchema(FAQ_DATA.filter(faq => faq.question.includes('marriage') || faq.question.includes('relationship') || faq.question.includes('Zodiac')));

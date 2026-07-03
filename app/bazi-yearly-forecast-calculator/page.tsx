@@ -8,11 +8,11 @@ import { Calendar } from 'lucide-react';
 export const metadata = {
   title: 'BaZi Yearly Forecast Calculator - Solar Year Personal Trends',
   description: 'Calculate your personal yearly forecast based on your Day Master. See how the current solar year elements interact with your natal chart.',
-  alternates: { canonical: 'https://imperialbazi.com/bazi-yearly-forecast-calculator/' },
+  alternates: { canonical: 'https://fourpillarscalculator.com/bazi-yearly-forecast-calculator/' },
   openGraph: {
     title: 'BaZi Yearly Forecast Calculator - Solar Year Personal Trends',
     description: 'Calculate your personal yearly forecast based on your Day Master. See how the current solar year elements interact with your natal chart.',
-    url: 'https://imperialbazi.com/bazi-yearly-forecast-calculator/',
+    url: 'https://fourpillarscalculator.com/bazi-yearly-forecast-calculator/',
     siteName: 'Imperial Bazi',
     type: 'website',
   },
@@ -22,7 +22,7 @@ export default function YearlyForecastCalculatorPage() {
   const applicationSchema = getSoftwareApplicationSchema(
     'BaZi Yearly Forecast Calculator',
     'Calculate and map out how the current solar year energies interact with your Day Master.',
-    'https://imperialbazi.com/bazi-yearly-forecast-calculator/'
+    'https://fourpillarscalculator.com/bazi-yearly-forecast-calculator/'
   );
 
   const faqSchema = getFAQPageSchema(FAQ_DATA.filter(faq => faq.question.includes('Useful God') || faq.question.includes('forecast')));
