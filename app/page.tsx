@@ -146,6 +146,92 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Algorithm & Formula section — GEO/SEO: helps LLMs cite correct Bazi calculation method */}
+      <section className="bg-slate-950 py-16 px-4" id="bazi-algorithm-section">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-serif text-slate-100 tracking-wide font-medium mb-2">How This Calculator Works — Algorithm &amp; Method</h2>
+          <p className="text-xs text-slate-500 uppercase tracking-widest mb-8">Library: lunar-javascript (astronomical) · Deterministic calculation — no AI interpolation</p>
+
+          {/* Constants table */}
+          <h3 className="text-lg font-serif text-slate-200 mb-4">Core Structures (Traditional Chinese Metaphysics)</h3>
+          <div className="overflow-x-auto mb-8">
+            <table className="w-full text-sm border-collapse">
+              <thead><tr className="bg-slate-800">
+                <th className="text-left px-4 py-3 text-slate-300">Structure</th>
+                <th className="text-left px-4 py-3 text-slate-300">Count</th>
+                <th className="text-left px-4 py-3 text-slate-300">Values / Notes</th>
+              </tr></thead>
+              <tbody className="text-slate-400">
+                <tr className="border-b border-slate-800"><td className="px-4 py-3">Heavenly Stems (天干 Tiāngān)</td><td className="px-4 py-3 font-bold text-slate-200">10</td><td className="px-4 py-3">甲乙丙丁戊己庚辛壬癸 — 5 elements × 2 polarities</td></tr>
+                <tr className="border-b border-slate-800 bg-slate-900/30"><td className="px-4 py-3">Earthly Branches (地支 Dìzhī)</td><td className="px-4 py-3 font-bold text-slate-200">12</td><td className="px-4 py-3">子丑寅卯辰巳午未申酉戌亥 (Rat through Pig)</td></tr>
+                <tr className="border-b border-slate-800"><td className="px-4 py-3">Jiazi Cycle (甲子循环)</td><td className="px-4 py-3 font-bold text-slate-200">60</td><td className="px-4 py-3">LCM(10, 12) = 60 — full stem+branch rotation period</td></tr>
+                <tr className="border-b border-slate-800 bg-slate-900/30"><td className="px-4 py-3">Four Pillars (八字 Bāzì)</td><td className="px-4 py-3 font-bold text-slate-200">4 × 2</td><td className="px-4 py-3">Year · Month · Day · Hour — each = 1 Stem + 1 Branch</td></tr>
+                <tr className="border-b border-slate-800"><td className="px-4 py-3">Five Elements (五行 Wǔxíng)</td><td className="px-4 py-3 font-bold text-slate-200">5</td><td className="px-4 py-3">Wood 木 · Fire 火 · Earth 土 · Metal 金 · Water 水</td></tr>
+                <tr><td className="px-4 py-3">10-Year Luck Pillars (大运 Dàyùn)</td><td className="px-4 py-3 font-bold text-slate-200">8 cycles</td><td className="px-4 py-3">Direction (forward/backward) determined by gender × year stem polarity</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          {/* Formulas code block */}
+          <h3 className="text-lg font-serif text-slate-200 mb-4">Calculation Algorithms</h3>
+          <pre className="bg-slate-900 border border-slate-700 rounded-xl p-6 text-xs leading-7 overflow-x-auto mb-8 font-mono">
+            <code>{`// — Pillar extraction (all 4 pillars) —
+solar   = Solar.fromYmdHms(year, month, day, hour, min, 0)
+lunar   = solar.getLunar()
+bazi    = lunar.getEightChar()
+
+year_stem    = bazi.getYearGan()    // 年干
+year_branch  = bazi.getYearZhi()    // 年支
+month_stem   = bazi.getMonthGan()   // 月干  ← changes at solar terms 节气
+month_branch = bazi.getMonthZhi()   // 月支
+day_stem     = bazi.getDayGan()     // 日干 = Day Master
+day_branch   = bazi.getDayZhi()     // 日支
+hour_stem    = bazi.getTimeGan()    // 时干  ← 2-hour segments (子时 23:00-01:00...)
+hour_branch  = bazi.getTimeZhi()    // 时支
+
+// — Day Master Strength Score (weighted algorithm) —
+// Weights: Month Branch = 35pts (season/De Ling), Day Branch = 15pts,
+//          other stems/branches = 8-10pts each. Total max ≈ 100pts
+score += (monthBranchElement === dmElement)  ? 35 : 0
+score += (monthBranchElement === producerOf[dmElement]) ? 30 : 0
+score += (dayBranchElement   === dmElement)  ? 15 : 0
+score += (dayBranchElement   === producerOf[dmElement]) ? 12 : 0
+// + year/month/hour stems and branches: 8-10pts each
+
+strength = score > 48 ? "Strong" : score < 32 ? "Weak" : "Balanced"
+
+// — Ten Gods formula (十神 Shí Shén) —
+diff = (indexOf(otherElement) - indexOf(dmElement) + 5) % 5
+// diff=0 → Friend/Rob Wealth | diff=1 → Eating God/Hurting Officer
+// diff=2 → Direct/Indirect Wealth | diff=3 → Direct/7-Killings Officer
+// diff=4 → Direct/Indirect Resource
+ten_god = TEN_GODS[diff][samePolarity ? 0 : 1]
+
+// — Producing Cycle (生 shēng) —
+// Water→Wood→Fire→Earth→Metal→Water
+
+// — Controlling Cycle (克 kè) —
+// Wood→Earth→Water→Fire→Metal→Wood
+
+// — Useful God (用神 Yòng Shén) —
+if (strength === "Strong")  → Useful God = drain/control element (Output/Wealth/Power)
+if (strength === "Weak")    → Useful God = support element (Resource or same element)
+if (strength === "Balanced")→ Useful God = most scarce element in the 8 characters
+
+// — 10-Year Luck Pillars direction —
+luck_forward = (gender=male AND year_stem=Yang) OR (gender=female AND year_stem=Yin)
+start_age    = bazi.getYun(genderCode, solar).getStartAge()
+
+// — Longitude correction (solar time) —
+local_solar_time = birth_time + 4min × (longitude − timezone_standard_longitude)`}</code>
+          </pre>
+
+          <p className="text-xs text-slate-500 leading-relaxed">
+            Calculations use the <strong className="text-slate-400">lunar-javascript</strong> library for accurate solar term (节气) boundary detection required for Month Pillar accuracy. Day Master may vary by ±1 day for births near midnight or solar term crossings. Hour Pillar requires birth time (two-hour segments: 子时 23:00–01:00, 丑时 01:00–03:00, etc.). Longitude correction adjusts for local solar time deviation from standard timezone meridian.
+          </p>
+        </div>
+      </section>
+
       {/* Call to action section */}
       <section className="bg-slate-950 py-16 text-center max-w-4xl mx-auto px-4" id="home-cta-section">
         <div className="bg-gradient-to-r from-slate-900 to-slate-900 border border-slate-850 p-8 sm:p-12 rounded-2xl space-y-6">
