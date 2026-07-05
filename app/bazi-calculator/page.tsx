@@ -7,11 +7,11 @@ import { Compass, BookOpen, Clock } from 'lucide-react';
 
 export const metadata = {
   title: 'Free BaZi Calculator - Accurate Four Pillars of Destiny Chart',
-  description: 'Calculate your accurate Chinese astrology BaZi chart. Enter date, time, and birthplace longitude to find your Day Master, element balance, and 10-year luck pillars.',
+  description: 'Calculate your accurate Chinese astrology BaZi chart (also known as Paht Chee). Enter date, time, and birthplace longitude to find your Day Master, element balance, and 10-year luck pillars.',
   alternates: { canonical: 'https://fourpillarscalculator.com/bazi-calculator/' },
   openGraph: {
     title: 'Free BaZi Calculator - Accurate Four Pillars of Destiny Chart',
-    description: 'Calculate your accurate Chinese astrology BaZi chart. Enter date, time, and birthplace longitude to find your Day Master, element balance, and 10-year luck pillars.',
+    description: 'Calculate your accurate Chinese astrology BaZi chart (also known as Paht Chee). Enter date, time, and birthplace longitude to find your Day Master, element balance, and 10-year luck pillars.',
     url: 'https://fourpillarscalculator.com/bazi-calculator/',
     siteName: 'Imperial Bazi',
     type: 'website',
@@ -46,7 +46,7 @@ export default function BaziCalculatorPage() {
             Free Professional BaZi Calculator
           </h1>
           <p className="text-sm sm:text-base text-slate-400 leading-relaxed">
-            Generate your accurate Chinese Solar Astrology birth chart. Our engine automatically calculates local solar offsets based on birthplace longitude, ensuring correct Hour Pillars and calendar boundaries.
+            Generate your accurate Chinese Solar Astrology birth chart — known as BaZi (八字) or, in Cantonese and Hokkien communities, Paht Chee. Our engine automatically calculates local solar offsets based on birthplace longitude, ensuring correct Hour Pillars and calendar boundaries.
           </p>
         </div>
 

@@ -18,6 +18,24 @@ export const GLOSSARY_DATA: Record<string, GlossaryEntry> = {
     definition: 'A decimal cycle of 10 elements composed of the Five Elements (Wood, Fire, Earth, Metal, Water) in their Yin and Yang aspects.',
     relevance: 'These represent the outer, visible traits of a person or event, manifesting as public behaviors and tendencies.'
   },
+  'Year Pillar': {
+    term: 'Year Pillar (Nián Zhù)',
+    category: 'Core Concepts',
+    definition: 'The first of the Four Pillars, built from the Heavenly Stem and Earthly Branch of your birth year. It also determines your Chinese zodiac animal sign.',
+    relevance: 'Traditionally read for ancestry, family background, and early childhood (roughly birth to age 15), as well as your broad public-facing image.'
+  },
+  'Paht Chee': {
+    term: 'Paht Chee (八字)',
+    category: 'Core Concepts',
+    definition: 'The Cantonese and Hokkien romanization of "BaZi" (八字, "Eight Characters") — the same system, just a different regional pronunciation, common in Singapore, Malaysia, and Hong Kong.',
+    relevance: 'If you searched for "Paht Chee calculator," you\'re in the right place — this calculator and BaZi are the identical system.'
+  },
+  'Shen Sha': {
+    term: 'Shen Sha (神煞)',
+    category: 'Advanced Systems',
+    definition: 'Symbolic or auxiliary stars — such as the Peach Blossom Star and Academic Star — layered on top of the core Four Pillars and Ten Gods analysis to highlight specific life themes.',
+    relevance: 'Shen Sha add flavor and nuance but are read alongside, never instead of, the Day Master and Ten Gods that form the backbone of a BaZi chart. See the full Symbolic Stars guide for details.'
+  },
   'Earthly Branches': {
     term: 'Earthly Branches (Dì Zhī)',
     category: 'Core Concepts',

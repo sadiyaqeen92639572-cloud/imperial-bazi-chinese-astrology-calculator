@@ -19,6 +19,7 @@ const STATIC_ROUTES = [
   'bazi-yearly-forecast/',
   'bazi-yearly-forecast-calculator/',
   'bazi/ten-gods-explained/',
+  'bazi/symbolic-stars/',
   'bazi/five-elements-chart/',
   'bazi/useful-god-explained/',
   'bazi/day-master/',

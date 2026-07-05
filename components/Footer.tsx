@@ -36,6 +36,7 @@ export default function Footer() {
       title: 'Technical Concepts',
       links: [
         { name: 'The 10 Gods (Shi Shen)', href: '/bazi/ten-gods-explained/' },
+        { name: 'Symbolic Stars (Shen Sha)', href: '/bazi/symbolic-stars/' },
         { name: 'Five Elements Chart', href: '/bazi/five-elements-chart/' },
         { name: 'Useful God (Yong Shen)', href: '/bazi/useful-god-explained/' },
         { name: '10 Day Master Meanings', href: '/bazi/day-master/' },

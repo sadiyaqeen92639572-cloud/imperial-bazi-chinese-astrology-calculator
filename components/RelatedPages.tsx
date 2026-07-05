@@ -42,6 +42,7 @@ const PAGES_LINKS_MAP: Record<string, LinkItem[]> = {
   ],
   '/bazi/ten-gods-explained/': [
     { name: 'Five Elements Chart', href: '/bazi/five-elements-chart/', desc: 'How Wood, Fire, Earth, Metal, and Water interact.' },
+    { name: 'Symbolic Stars (Shen Sha)', href: '/bazi/symbolic-stars/', desc: 'Peach Blossom, Academic Star, and other auxiliary chart stars.' },
     { name: 'Chart Interpretation', href: '/bazi-chart-interpretation/', desc: 'Pillar by pillar analysis of your natal chart.' },
     { name: 'Core BaZi Calculator', href: '/bazi-calculator/', desc: 'Input your birth details to generate your full chart.' },
     { name: 'Astrology Glossary', href: '/glossary/', desc: 'A complete definitions bank of astrological concepts.' },
@@ -56,6 +57,11 @@ const PAGES_LINKS_MAP: Record<string, LinkItem[]> = {
     { name: 'Five Elements Chart', href: '/bazi/five-elements-chart/', desc: 'Learn how to count and balance Wood, Fire, Earth, Metal, and Water.' },
     { name: 'Yearly Solar Forecast', href: '/bazi-yearly-forecast/', desc: 'Read your annual astrological forecasts.' },
     { name: 'Chart Interpretation', href: '/bazi-chart-interpretation/', desc: 'Pillar-by-pillar guide to interpreting natal placements.' },
+  ],
+  '/bazi/symbolic-stars/': [
+    { name: 'The Ten Gods Explained', href: '/bazi/ten-gods-explained/', desc: 'The core relational deities behind money, power, and creativity.' },
+    { name: '10 Day Masters Hub', href: '/bazi/day-master/', desc: 'Find your Day Master — sometimes called your "life star."' },
+    { name: 'Core BaZi Calculator', href: '/bazi-calculator/', desc: 'Generate your full chart to see your own symbolic stars.' },
   ],
   '/bazi-compatibility-calculator/': [
     { name: 'Compatibility Guide', href: '/bazi-compatibility-guide/', desc: 'Detailed reference on how elements match for marriage and love.' },
