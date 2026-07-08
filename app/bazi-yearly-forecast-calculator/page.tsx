@@ -45,7 +45,7 @@ export default function YearlyForecastCalculatorPage() {
           <h1 className="text-3xl sm:text-5xl font-serif text-slate-100 tracking-tight font-medium">
             BaZi Yearly Forecast Calculator
           </h1>
-          <p className="text-sm sm:text-base text-slate-400 leading-relaxed">
+          <p className="text-base sm:text-lg text-slate-400 leading-relaxed">
             Every year has its own unique elemental dual-signature (Stem and Branch). Input your birth details below to check your Day Master strength and discover how current cycles affect your career, money, and relationships.
           </p>
         </div>
@@ -61,14 +61,14 @@ export default function YearlyForecastCalculatorPage() {
             <Calendar className="h-5 w-5 text-amber-500" />
             <span>How Yearly Forecasts Are Computed</span>
           </h2>
-          <div className="text-xs sm:text-sm text-slate-300 space-y-4 leading-relaxed">
+          <div className="text-sm sm:text-base text-slate-300 space-y-4 leading-relaxed">
             <p>
               In BaZi solar astrology, every year is a dynamic column consisting of a Heavenly Stem and an Earthly Branch. This energetic team travels across the sky and interacts directly with the static columns in your birth chart.
             </p>
             <p>
               The forecast checks whether the yearly elements represent your <strong>Useful God (Yong Shen)</strong> or <strong>Favorable Elements</strong>:
             </p>
-            <ul className="list-disc list-inside space-y-1.5 pl-2 text-xs text-slate-400">
+            <ul className="list-disc list-inside space-y-1.5 pl-2 text-sm text-slate-400">
               <li>If the year brings your <strong>Resource (印)</strong>, you will enjoy a supportive period focused on learning, planning, and academic achievements.</li>
               <li>If the year brings your <strong>Wealth (财)</strong>, it represents financial opportunities, business expansions, or relationship developments (for male Day Masters).</li>
               <li>If the year brings your <strong>Officer (官)</strong>, it brings career responsibility, promotions, or social status breakthroughs.</li>

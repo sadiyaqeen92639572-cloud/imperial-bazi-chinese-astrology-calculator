@@ -45,7 +45,7 @@ export default function CompatibilityCalculatorPage() {
           <h1 className="text-3xl sm:text-5xl font-serif text-slate-100 tracking-tight font-medium">
             BaZi Relationship Compatibility Calculator
           </h1>
-          <p className="text-sm sm:text-base text-slate-400 leading-relaxed">
+          <p className="text-base sm:text-lg text-slate-400 leading-relaxed">
             Enter birth details for two partners to evaluate their alchemical energetic harmony. Our calculator cross-checks Day Master elements, Spouse House earthly branches, and complementary elements counts to produce a detailed compatibility report.
           </p>
         </div>
@@ -61,7 +61,7 @@ export default function CompatibilityCalculatorPage() {
             <Heart className="h-5 w-5 text-red-500 fill-current" />
             <span>How is Metaphysical Relationship Compatibility Measured?</span>
           </h2>
-          <div className="text-xs sm:text-sm text-slate-300 space-y-4 leading-relaxed">
+          <div className="text-sm sm:text-base text-slate-300 space-y-4 leading-relaxed">
             <p>
               In traditional BaZi compatibility (He Hun, 合婚), a successful union doesn&apos;t mean two people are identical. Rather, they should possess complementary energies. For example, if Person A has an dry, hot chart with heavy Fire and lacks Water, they are naturally supported by Person B whose chart is cool and has abundant Water.
             </p>

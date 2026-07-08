@@ -95,7 +95,7 @@ export default function BaziCalculator({ initialGender = 'female', mode = 'full'
           </div>
           <div>
             <h2 className="text-xl font-serif text-slate-100 font-medium">Enter Birth Details</h2>
-            <p className="text-xs text-slate-400">Provide date, clock time, and birthplace coordinates for maximum solar accuracy.</p>
+            <p className="text-sm text-slate-400">Provide date, clock time, and birthplace coordinates for maximum solar accuracy.</p>
           </div>
         </div>
 
@@ -103,7 +103,7 @@ export default function BaziCalculator({ initialGender = 'female', mode = 'full'
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Birth Date */}
             <div>
-              <label className="block text-sm font-medium text-slate-300 mb-2 flex items-center">
+              <label className="block text-base font-medium text-slate-300 mb-2 flex items-center">
                 <Calendar className="h-4 w-4 mr-1.5 text-amber-500" />
                 Birth Date (Gregorian)
               </label>
@@ -120,11 +120,11 @@ export default function BaziCalculator({ initialGender = 'female', mode = 'full'
             {/* Birth Time */}
             <div>
               <div className="flex justify-between items-center mb-2">
-                <label className="text-sm font-medium text-slate-300 flex items-center">
+                <label className="text-base font-medium text-slate-300 flex items-center">
                   <Clock className="h-4 w-4 mr-1.5 text-amber-500" />
                   Birth Time (Clock)
                 </label>
-                <label className="flex items-center text-xs text-slate-400 cursor-pointer">
+                <label className="flex items-center text-sm text-slate-400 cursor-pointer">
                   <input
                     type="checkbox"
                     checked={unknownTime}
@@ -147,12 +147,12 @@ export default function BaziCalculator({ initialGender = 'female', mode = 'full'
 
             {/* Gender */}
             <div>
-              <label className="block text-sm font-medium text-slate-300 mb-2">Biological Gender</label>
+              <label className="block text-base font-medium text-slate-300 mb-2">Biological Gender</label>
               <div className="grid grid-cols-2 gap-4">
                 <button
                   type="button"
                   onClick={() => setGender('female')}
-                  className={`py-2.5 rounded-lg text-sm font-medium transition-colors ${
+                  className={`py-2.5 rounded-lg text-base font-medium transition-colors ${
                     gender === 'female'
                       ? 'bg-amber-500 text-slate-950 shadow-md'
                       : 'bg-slate-950 border border-slate-800 text-slate-300 hover:bg-slate-800/40'
@@ -164,7 +164,7 @@ export default function BaziCalculator({ initialGender = 'female', mode = 'full'
                 <button
                   type="button"
                   onClick={() => setGender('male')}
-                  className={`py-2.5 rounded-lg text-sm font-medium transition-colors ${
+                  className={`py-2.5 rounded-lg text-base font-medium transition-colors ${
                     gender === 'male'
                       ? 'bg-amber-500 text-slate-950 shadow-md'
                       : 'bg-slate-950 border border-slate-800 text-slate-300 hover:bg-slate-800/40'
@@ -174,12 +174,12 @@ export default function BaziCalculator({ initialGender = 'female', mode = 'full'
                   Male (Yin/Yang rule)
                 </button>
               </div>
-              <p className="text-[11px] text-slate-500 mt-1">Required to compute correct 10-year Luck Pillar movement direction.</p>
+              <p className="text-sm text-slate-500 mt-1">Required to compute correct 10-year Luck Pillar movement direction.</p>
             </div>
 
             {/* Timezone offset */}
             <div>
-              <label className="block text-sm font-medium text-slate-300 mb-2">Timezone (UTC Offset Hours)</label>
+              <label className="block text-base font-medium text-slate-300 mb-2">Timezone (UTC Offset Hours)</label>
               <input
                 type="number"
                 step="0.5"
@@ -190,12 +190,12 @@ export default function BaziCalculator({ initialGender = 'female', mode = 'full'
                 className="w-full bg-slate-950 border border-slate-800 focus:border-amber-500/50 rounded-lg py-2.5 px-4 text-slate-200 outline-none transition-colors"
                 id="timezone-input"
               />
-              <p className="text-[11px] text-slate-500 mt-1">E.g., EST = -5, GMT = 0, CET = +1, Singapore = +8.</p>
+              <p className="text-sm text-slate-500 mt-1">E.g., EST = -5, GMT = 0, CET = +1, Singapore = +8.</p>
             </div>
 
             {/* Longitude (optional) */}
             <div className="md:col-span-2">
-              <label className="block text-sm font-medium text-slate-300 mb-2 flex items-center">
+              <label className="block text-base font-medium text-slate-300 mb-2 flex items-center">
                 <MapPin className="h-4 w-4 mr-1.5 text-amber-500" />
                 Birthplace Longitude (Optional - for solar time correction)
               </label>
@@ -210,7 +210,7 @@ export default function BaziCalculator({ initialGender = 'female', mode = 'full'
                 className="w-full bg-slate-950 border border-slate-800 focus:border-amber-500/50 rounded-lg py-2.5 px-4 text-slate-200 outline-none transition-colors"
                 id="longitude-input"
               />
-              <p className="text-[11px] text-slate-500 mt-1">
+              <p className="text-sm text-slate-500 mt-1">
                 Converts standard clock time to Local Solar Time. This prevents boundary hour shifts between different cities in the same timezone.
               </p>
             </div>
@@ -218,7 +218,7 @@ export default function BaziCalculator({ initialGender = 'female', mode = 'full'
 
           {/* Validation Errors */}
           {formErrors.length > 0 && (
-            <div className="bg-red-900/20 border border-red-800/40 rounded-lg p-4 flex items-start space-x-2 text-red-400 text-sm">
+            <div className="bg-red-900/20 border border-red-800/40 rounded-lg p-4 flex items-start space-x-2 text-red-400 text-base">
               <AlertCircle className="h-5 w-5 shrink-0 mt-0.5" />
               <div className="space-y-1">
                 {formErrors.map((err, idx) => (
@@ -248,13 +248,13 @@ export default function BaziCalculator({ initialGender = 'female', mode = 'full'
           <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-xl flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
             <div>
               <div className="flex items-center space-x-2">
-                <span className="text-xs font-semibold px-2.5 py-1 bg-amber-500/10 text-amber-500 rounded-full uppercase tracking-wider">
+                <span className="text-sm font-semibold px-2.5 py-1 bg-amber-500/10 text-amber-500 rounded-full uppercase tracking-wider">
                   {result.gender}
                 </span>
-                <span className="text-slate-400 text-xs">Birth Data:</span>
+                <span className="text-slate-400 text-sm">Birth Data:</span>
               </div>
               <h3 className="text-xl font-serif text-slate-100 font-medium mt-1">{result.solarDateStr}</h3>
-              <p className="text-xs text-slate-400 mt-1">{result.lunarDateStr}</p>
+              <p className="text-sm text-slate-400 mt-1">{result.lunarDateStr}</p>
             </div>
             
             {/* Day Master Quick Stats */}
@@ -267,14 +267,14 @@ export default function BaziCalculator({ initialGender = 'female', mode = 'full'
                 }}
               >
                 <span className="text-lg">{result.dayMaster.stem}</span>
-                <span className="text-[10px] leading-none opacity-80">{result.dayMaster.en}</span>
+                <span className="text-xs leading-none opacity-80">{result.dayMaster.en}</span>
               </div>
               <div>
-                <div className="text-[10px] text-slate-500 uppercase tracking-widest">Day Master</div>
-                <div className="text-slate-200 font-medium text-sm">
+                <div className="text-xs text-slate-500 uppercase tracking-widest">Day Master</div>
+                <div className="text-slate-200 font-medium text-base">
                   {result.dayMaster.polarity} {result.dayMaster.element}
                 </div>
-                <div className="text-xs">
+                <div className="text-sm">
                   Strength: <span className={`font-semibold ${
                     result.dayMaster.strength === 'Strong' ? 'text-emerald-400' :
                     result.dayMaster.strength === 'Weak' ? 'text-red-400' : 'text-amber-400'
@@ -305,8 +305,8 @@ export default function BaziCalculator({ initialGender = 'female', mode = 'full'
                     if (col.isHour && !col.pillar) {
                       return (
                         <div key={idx} className="bg-slate-900/40 border border-slate-800/40 rounded-2xl p-6 flex flex-col items-center justify-center min-h-[340px]">
-                          <div className="text-xs text-slate-500 uppercase tracking-widest">{col.title}</div>
-                          <div className="text-sm text-slate-600 mt-2 text-center">Hour not provided</div>
+                          <div className="text-sm text-slate-500 uppercase tracking-widest">{col.title}</div>
+                          <div className="text-base text-slate-600 mt-2 text-center">Hour not provided</div>
                         </div>
                       );
                     }
@@ -324,28 +324,28 @@ export default function BaziCalculator({ initialGender = 'female', mode = 'full'
                       >
                         {/* Title */}
                         <div>
-                          <div className="text-xs font-semibold uppercase tracking-widest text-slate-400">{col.title}</div>
-                          <div className="text-[10px] text-slate-500 italic mt-0.5">{col.desc}</div>
+                          <div className="text-sm font-semibold uppercase tracking-widest text-slate-400">{col.title}</div>
+                          <div className="text-xs text-slate-500 italic mt-0.5">{col.desc}</div>
                         </div>
 
                         {/* Heavenly Stem Box */}
                         <div className="bg-slate-950 border border-slate-850 rounded-xl p-3 space-y-1 relative group">
                           {pillar.tenGodStem && (
-                            <span className="absolute top-1 left-2 text-[9px] font-bold text-slate-500 uppercase tracking-wider">
+                            <span className="absolute top-1 left-2 text-xs font-bold text-slate-500 uppercase tracking-wider">
                               {pillar.tenGodStem.code}
                             </span>
                           )}
                           <div className="text-3xl font-bold font-serif" style={{ color: stemColor }}>
                             {pillar.stem}
                           </div>
-                          <div className="text-xs font-medium text-slate-200">{pillar.stemEn}</div>
-                          <div className="text-[10px] text-slate-500 flex items-center justify-center space-x-1">
+                          <div className="text-sm font-medium text-slate-200">{pillar.stemEn}</div>
+                          <div className="text-xs text-slate-500 flex items-center justify-center space-x-1">
                             <span>{pillar.stemPolarity}</span>
                             <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: stemColor }}></span>
                             <span>{pillar.stemElement}</span>
                           </div>
                           {pillar.tenGodStem && (
-                            <div className="text-[10px] font-medium text-amber-500/90 mt-1">
+                            <div className="text-xs font-medium text-amber-500/90 mt-1">
                               {pillar.tenGodStem.en} ({pillar.tenGodStem.zh})
                             </div>
                           )}
@@ -354,23 +354,23 @@ export default function BaziCalculator({ initialGender = 'female', mode = 'full'
                         {/* Earthly Branch Box */}
                         <div className="bg-slate-950 border border-slate-850 rounded-xl p-3 space-y-1 relative group">
                           {pillar.tenGodBranchMain && (
-                            <span className="absolute top-1 left-2 text-[9px] font-bold text-slate-500 uppercase tracking-wider">
+                            <span className="absolute top-1 left-2 text-xs font-bold text-slate-500 uppercase tracking-wider">
                               {pillar.tenGodBranchMain.code}
                             </span>
                           )}
                           <div className="text-3xl font-bold font-serif" style={{ color: branchColor }}>
                             {pillar.branch}
                           </div>
-                          <div className="text-xs font-medium text-slate-200">
+                          <div className="text-sm font-medium text-slate-200">
                             {pillar.branchEn} ({pillar.animal})
                           </div>
-                          <div className="text-[10px] text-slate-500 flex items-center justify-center space-x-1">
+                          <div className="text-xs text-slate-500 flex items-center justify-center space-x-1">
                             <span>{pillar.branchPolarity}</span>
                             <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: branchColor }}></span>
                             <span>{pillar.branchElement}</span>
                           </div>
                           {pillar.tenGodBranchMain && (
-                            <div className="text-[10px] font-medium text-amber-500/90 mt-1">
+                            <div className="text-xs font-medium text-amber-500/90 mt-1">
                               {pillar.tenGodBranchMain.en}
                             </div>
                           )}
@@ -378,14 +378,14 @@ export default function BaziCalculator({ initialGender = 'female', mode = 'full'
 
                         {/* Hidden Stems Section */}
                         <div className="border-t border-slate-850 pt-3">
-                          <div className="text-[10px] font-semibold text-slate-500 uppercase tracking-widest mb-1.5">Hidden Stems</div>
+                          <div className="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-1.5">Hidden Stems</div>
                           <div className="space-y-1 text-left">
                             {pillar.hiddenStems.map((hs, hidx) => (
-                              <div key={hidx} className="flex justify-between items-center text-[11px] py-0.5 border-b border-slate-950 last:border-0">
+                              <div key={hidx} className="flex justify-between items-center text-sm py-0.5 border-b border-slate-950 last:border-0">
                                 <span className="font-serif font-medium text-slate-200" style={{ color: ELEMENTS_MAP[hs.element]?.color }}>
                                   {hs.stem} ({hs.en})
                                 </span>
-                                <span className="text-slate-500 text-[10px] truncate max-w-[120px]">{hs.tenGod}</span>
+                                <span className="text-slate-500 text-xs truncate max-w-[120px]">{hs.tenGod}</span>
                               </div>
                             ))}
                           </div>
@@ -401,15 +401,15 @@ export default function BaziCalculator({ initialGender = 'female', mode = 'full'
                 <div className="flex items-start space-x-3">
                   <Info className="h-5 w-5 text-amber-500 shrink-0 mt-0.5" />
                   <div>
-                    <h4 className="text-slate-200 font-medium text-sm font-serif">Read More About Your Day Master</h4>
-                    <p className="text-xs text-slate-400 mt-1">
+                    <h4 className="text-slate-200 font-medium text-base font-serif">Read More About Your Day Master</h4>
+                    <p className="text-sm text-slate-400 mt-1">
                       Your Day Master is <span className="text-amber-500 font-semibold">{result.dayMaster.en} {result.dayMaster.element}</span>. Read the dedicated chapter on traits, careers, and love.
                     </p>
                   </div>
                 </div>
                 <Link
                   href={`/bazi/day-master/${getDayMasterSlug(result.dayMaster.stem)}/`}
-                  className="bg-amber-500/10 hover:bg-amber-500 text-amber-500 hover:text-slate-950 text-xs font-semibold py-2 px-4 rounded-lg border border-amber-500/20 transition-all flex items-center space-x-1 shrink-0"
+                  className="bg-amber-500/10 hover:bg-amber-500 text-amber-500 hover:text-slate-950 text-sm font-semibold py-2 px-4 rounded-lg border border-amber-500/20 transition-all flex items-center space-x-1 shrink-0"
                 >
                   <span>Open detailed interpretation</span>
                   <ChevronRight className="h-3 w-3" />
@@ -422,8 +422,8 @@ export default function BaziCalculator({ initialGender = 'female', mode = 'full'
                 {/* Visual counts */}
                 <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-6">
                   <div>
-                    <h3 className="text-base font-serif text-slate-100 font-medium">Five Elements Balance Chart</h3>
-                    <p className="text-xs text-slate-400">Total active counts of Wood, Fire, Earth, Metal, and Water characters.</p>
+                    <h3 className="text-lg font-serif text-slate-100 font-medium">Five Elements Balance Chart</h3>
+                    <p className="text-sm text-slate-400">Total active counts of Wood, Fire, Earth, Metal, and Water characters.</p>
                   </div>
 
                   <div className="space-y-4">
@@ -433,7 +433,7 @@ export default function BaziCalculator({ initialGender = 'female', mode = 'full'
 
                       return (
                         <div key={el} className="space-y-1">
-                          <div className="flex justify-between text-xs font-medium">
+                          <div className="flex justify-between text-sm font-medium">
                             <span className="flex items-center space-x-1.5 text-slate-300">
                               <span className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: info.color }}></span>
                               <span>{info.en} ({info.zh})</span>
@@ -458,25 +458,25 @@ export default function BaziCalculator({ initialGender = 'female', mode = 'full'
                 {/* Useful God analysis */}
                 <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between space-y-4">
                   <div>
-                    <h3 className="text-base font-serif text-slate-100 font-medium flex items-center space-x-1.5">
+                    <h3 className="text-lg font-serif text-slate-100 font-medium flex items-center space-x-1.5">
                       <span>Useful God (Yong Shen)</span>
-                      <span className="text-[10px] font-semibold bg-amber-500/10 text-amber-500 px-2 py-0.5 rounded uppercase">
+                      <span className="text-xs font-semibold bg-amber-500/10 text-amber-500 px-2 py-0.5 rounded uppercase">
                         {result.usefulGod.element}
                       </span>
                     </h3>
-                    <p className="text-xs text-slate-400">Your optimal balancing element determined by Day Master strength.</p>
+                    <p className="text-sm text-slate-400">Your optimal balancing element determined by Day Master strength.</p>
                   </div>
 
-                  <p className="text-xs text-slate-300 leading-relaxed bg-slate-950 p-4 border border-slate-850 rounded-xl">
+                  <p className="text-sm text-slate-300 leading-relaxed bg-slate-950 p-4 border border-slate-850 rounded-xl">
                     {result.usefulGod.description}
                   </p>
 
-                  <div className="grid grid-cols-2 gap-4 text-xs">
+                  <div className="grid grid-cols-2 gap-4 text-sm">
                     <div className="bg-emerald-950/20 border border-emerald-900/30 rounded-lg p-3">
                       <div className="text-emerald-400 font-semibold mb-1">Favorable Elements</div>
                       <div className="flex flex-wrap gap-1">
                         {result.usefulGod.favorableElements.map(el => (
-                          <span key={el} className="bg-emerald-900/40 text-emerald-300 px-1.5 py-0.5 rounded text-[10px]">
+                          <span key={el} className="bg-emerald-900/40 text-emerald-300 px-1.5 py-0.5 rounded text-xs">
                             {el}
                           </span>
                         ))}
@@ -487,12 +487,12 @@ export default function BaziCalculator({ initialGender = 'female', mode = 'full'
                       <div className="flex flex-wrap gap-1">
                         {result.usefulGod.unfavorableElements.length > 0 ? (
                           result.usefulGod.unfavorableElements.map(el => (
-                            <span key={el} className="bg-red-900/40 text-red-300 px-1.5 py-0.5 rounded text-[10px]">
+                            <span key={el} className="bg-red-900/40 text-red-300 px-1.5 py-0.5 rounded text-xs">
                               {el}
                             </span>
                           ))
                         ) : (
-                          <span className="text-slate-500 italic text-[10px]">None strictly</span>
+                          <span className="text-slate-500 italic text-xs">None strictly</span>
                         )}
                       </div>
                     </div>
@@ -512,9 +512,9 @@ export default function BaziCalculator({ initialGender = 'female', mode = 'full'
               </div>
 
               <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-lg overflow-x-auto">
-                <table className="w-full text-left text-sm border-collapse min-w-[700px]">
+                <table className="w-full text-left text-base border-collapse min-w-[700px]">
                   <thead>
-                    <tr className="border-b border-slate-800 text-slate-400 font-medium text-xs">
+                    <tr className="border-b border-slate-800 text-slate-400 font-medium text-sm">
                       <th className="py-3 px-4">Cycle</th>
                       <th className="py-3 px-4">Start Age</th>
                       <th className="py-3 px-4">Start Year</th>
@@ -531,21 +531,21 @@ export default function BaziCalculator({ initialGender = 'female', mode = 'full'
                       return (
                         <tr key={idx} className="border-b border-slate-850/60 last:border-0 hover:bg-slate-850/20 text-slate-200">
                           <td className="py-3.5 px-4 font-medium text-amber-500">Pillar {idx + 1}</td>
-                          <td className="py-3.5 px-4 font-mono text-xs">{lp.startAge} years old</td>
-                          <td className="py-3.5 px-4 font-mono text-xs">{lp.startYear}</td>
+                          <td className="py-3.5 px-4 font-mono text-sm">{lp.startAge} years old</td>
+                          <td className="py-3.5 px-4 font-mono text-sm">{lp.startYear}</td>
                           <td className="py-3.5 px-4">
                             <span className="font-serif font-bold mr-1" style={{ color: stemColor }}>
                               {lp.stem}
                             </span>
-                            <span className="text-xs text-slate-400">{lp.stemEn} ({lp.stemElement})</span>
+                            <span className="text-sm text-slate-400">{lp.stemEn} ({lp.stemElement})</span>
                           </td>
                           <td className="py-3.5 px-4">
                             <span className="font-serif font-bold mr-1" style={{ color: branchColor }}>
                               {lp.branch}
                             </span>
-                            <span className="text-xs text-slate-400">{lp.branchEn} ({lp.animal})</span>
+                            <span className="text-sm text-slate-400">{lp.branchEn} ({lp.animal})</span>
                           </td>
-                          <td className="py-3.5 px-4 text-xs font-semibold text-slate-300">
+                          <td className="py-3.5 px-4 text-sm font-semibold text-slate-300">
                             {lp.tenGodStem.en} ({lp.tenGodStem.zh})
                           </td>
                         </tr>

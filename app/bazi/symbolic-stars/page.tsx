@@ -54,7 +54,7 @@ export default function SymbolicStarsPage() {
           <h1 className="text-3xl sm:text-5xl font-serif text-slate-100 tracking-tight font-medium">
             BaZi Symbolic Stars (Shen Sha)
           </h1>
-          <p className="text-sm sm:text-base text-slate-400 leading-relaxed">
+          <p className="text-base sm:text-lg text-slate-400 leading-relaxed">
             Beyond the core Four Pillars and Ten Gods, classical BaZi layers in a set of symbolic stars
             (神煞 Shen Sha) that add specific life themes — romance, scholarship, and more — on top of your
             main chart structure.
@@ -69,13 +69,13 @@ export default function SymbolicStarsPage() {
                 <div className="flex items-center space-x-2 text-amber-500">
                   <Icon className="h-5 w-5" />
                   <h2 className="text-lg font-serif text-slate-100">
-                    {star.name} <span className="text-slate-500 text-sm">({star.chinese})</span>
+                    {star.name} <span className="text-slate-500 text-base">({star.chinese})</span>
                   </h2>
                 </div>
-                <p className="text-xs text-slate-500">Also known as: {star.altNames.join(', ')}</p>
-                <p className="text-sm text-slate-300">{star.summary}</p>
-                <p className="text-sm text-slate-400">{star.personality}</p>
-                <p className="text-xs text-slate-500 pt-2 border-t border-slate-850">{star.howToFind}</p>
+                <p className="text-sm text-slate-500">Also known as: {star.altNames.join(', ')}</p>
+                <p className="text-base text-slate-300">{star.summary}</p>
+                <p className="text-base text-slate-400">{star.personality}</p>
+                <p className="text-sm text-slate-500 pt-2 border-t border-slate-850">{star.howToFind}</p>
               </div>
             );
           })}
@@ -83,13 +83,13 @@ export default function SymbolicStarsPage() {
 
         <section className="bg-slate-900/60 border border-slate-850 rounded-2xl p-6 sm:p-8 space-y-4">
           <h2 className="text-xl font-serif text-slate-200 tracking-wide">The Year Pillar</h2>
-          <p className="text-sm text-slate-400 leading-relaxed">
+          <p className="text-base text-slate-400 leading-relaxed">
             The Year Pillar (年柱) is the first of the Four Pillars, built from your birth year&apos;s Heavenly Stem
             and Earthly Branch. It traditionally represents ancestry, family background, and early childhood
             (roughly birth to age 15), and carries your Chinese zodiac animal sign.
           </p>
           <h2 className="text-xl font-serif text-slate-200 tracking-wide pt-2">What Is a &quot;Life Star&quot;?</h2>
-          <p className="text-sm text-slate-400 leading-relaxed">
+          <p className="text-base text-slate-400 leading-relaxed">
             &quot;Life star&quot; is an informal term some readers use for the Day Master (the Day Stem) — the core
             element that anchors the entire chart. It is not a distinct Shen Sha; see the Day Master guide below
             for the complete profile of all ten Day Master types.

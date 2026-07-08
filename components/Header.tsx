@@ -31,7 +31,7 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="flex items-center space-x-1 text-slate-300 hover:text-amber-400 font-medium text-sm transition-colors"
+                className="flex items-center space-x-1 text-slate-300 hover:text-amber-400 font-medium text-base transition-colors"
               >
                 <item.icon className="h-4 w-4 text-slate-400" />
                 <span>{item.name}</span>
@@ -60,7 +60,7 @@ export default function Header() {
                 key={item.name}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className="flex items-center space-x-2 px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-amber-400 hover:bg-slate-900 transition-colors"
+                className="flex items-center space-x-2 px-3 py-2 rounded-md text-lg font-medium text-slate-300 hover:text-amber-400 hover:bg-slate-900 transition-colors"
               >
                 <item.icon className="h-5 w-5 text-slate-400" />
                 <span>{item.name}</span>

@@ -88,10 +88,10 @@ export default async function DayMasterDetailPage({ params }: StemPageProps) {
             </span>
             <div>
               <div className="flex items-center justify-center sm:justify-start space-x-2 mt-2 sm:mt-0">
-                <span className="text-xs font-semibold px-2.5 py-0.5 bg-amber-500/10 text-amber-500 rounded-full uppercase tracking-wider">
+                <span className="text-sm font-semibold px-2.5 py-0.5 bg-amber-500/10 text-amber-500 rounded-full uppercase tracking-wider">
                   {dm.polarity}
                 </span>
-                <span className="text-slate-500 text-xs italic">({dm.name})</span>
+                <span className="text-slate-500 text-sm italic">({dm.name})</span>
               </div>
               <h1 className="text-2xl sm:text-3xl font-serif text-slate-100 font-medium mt-1">
                 {dm.stem} {dm.element} Day Master
@@ -99,7 +99,7 @@ export default async function DayMasterDetailPage({ params }: StemPageProps) {
             </div>
           </div>
 
-          <p className="text-xs sm:text-sm text-slate-300 sm:max-w-md italic leading-relaxed text-center sm:text-right bg-slate-950 p-4 border border-slate-850 rounded-xl shrink-0">
+          <p className="text-sm sm:text-base text-slate-300 sm:max-w-md italic leading-relaxed text-center sm:text-right bg-slate-950 p-4 border border-slate-850 rounded-xl shrink-0">
             &ldquo;{dm.summary}&rdquo;
           </p>
         </div>
@@ -113,20 +113,20 @@ export default async function DayMasterDetailPage({ params }: StemPageProps) {
               <Sparkles className="h-5 w-5 text-amber-500" />
               <span>Personality Archetype &amp; Mindset</span>
             </h2>
-            <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">{dm.personality}</p>
+            <p className="text-slate-300 text-sm sm:text-base leading-relaxed">{dm.personality}</p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
               <div className="bg-slate-950 border border-slate-850 p-4 rounded-lg space-y-2">
-                <span className="text-xs font-semibold text-emerald-400 uppercase tracking-wider">Key Strengths</span>
-                <ul className="list-disc list-inside text-xs text-slate-400 space-y-1">
+                <span className="text-sm font-semibold text-emerald-400 uppercase tracking-wider">Key Strengths</span>
+                <ul className="list-disc list-inside text-sm text-slate-400 space-y-1">
                   {dm.strengths.map((s, i) => (
                     <li key={i}>{s}</li>
                   ))}
                 </ul>
               </div>
               <div className="bg-slate-950 border border-slate-850 p-4 rounded-lg space-y-2">
-                <span className="text-xs font-semibold text-amber-400 uppercase tracking-wider">Major Challenges</span>
-                <ul className="list-disc list-inside text-xs text-slate-400 space-y-1">
+                <span className="text-sm font-semibold text-amber-400 uppercase tracking-wider">Major Challenges</span>
+                <ul className="list-disc list-inside text-sm text-slate-400 space-y-1">
                   {dm.challenges.map((c, i) => (
                     <li key={i}>{c}</li>
                   ))}
@@ -141,7 +141,7 @@ export default async function DayMasterDetailPage({ params }: StemPageProps) {
               <Briefcase className="h-5 w-5 text-amber-500" />
               <span>Optimal Career Paths &amp; Work Ethic</span>
             </h2>
-            <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">{dm.careerPath}</p>
+            <p className="text-slate-300 text-sm sm:text-base leading-relaxed">{dm.careerPath}</p>
           </div>
 
           {/* Section 3: Romance & Chemistry */}
@@ -150,7 +150,7 @@ export default async function DayMasterDetailPage({ params }: StemPageProps) {
               <Heart className="h-5 w-5 text-red-500" />
               <span>Romance, Marriage &amp; Partnership Chemistry</span>
             </h2>
-            <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">{dm.loveLife}</p>
+            <p className="text-slate-300 text-sm sm:text-base leading-relaxed">{dm.loveLife}</p>
           </div>
 
           {/* Section 4: Cosmic Elements and Support */}
@@ -159,14 +159,14 @@ export default async function DayMasterDetailPage({ params }: StemPageProps) {
               <BookOpen className="h-5 w-5 text-amber-500" />
               <span>Metaphysical Alliances &amp; Supporting Deities</span>
             </h2>
-            <div className="space-y-3 text-xs sm:text-sm text-slate-300 leading-relaxed">
+            <div className="space-y-3 text-sm sm:text-base text-slate-300 leading-relaxed">
               <div>
                 <strong className="text-slate-200">Optimal Ten Gods Interactions:</strong>
-                <p className="text-slate-400 text-xs mt-1">{dm.bestTenGods}</p>
+                <p className="text-slate-400 text-sm mt-1">{dm.bestTenGods}</p>
               </div>
               <div>
                 <strong className="text-slate-200">Auspicious Compatibility Alliances:</strong>
-                <p className="text-slate-400 text-xs mt-1">{dm.famousDynamics}</p>
+                <p className="text-slate-400 text-sm mt-1">{dm.famousDynamics}</p>
               </div>
             </div>
           </div>
