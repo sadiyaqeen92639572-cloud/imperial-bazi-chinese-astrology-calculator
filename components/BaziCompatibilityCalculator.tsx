@@ -184,33 +184,33 @@ export default function BaziCompatibilityCalculator() {
         <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-4">
           <div className="flex items-center space-x-2 pb-2 border-b border-slate-800">
             <span className="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
-            <h3 className="text-base font-serif font-semibold text-slate-100 uppercase tracking-widest">Person A (Self/Partner)</h3>
+            <h3 className="text-lg font-serif font-semibold text-slate-100 uppercase tracking-widest">Person A (Self/Partner)</h3>
           </div>
 
           <div className="space-y-3">
             <div>
-              <label className="block text-sm font-medium text-slate-400 mb-1">Birth Date</label>
+              <label className="block text-base font-medium text-slate-400 mb-1">Birth Date</label>
               <input
                 type="date"
                 required
                 value={dateA}
                 onChange={(e) => setDateA(e.target.value)}
-                className="w-full bg-slate-950 border border-slate-855 rounded-lg py-2 px-3 text-base text-slate-200 outline-none"
+                className="w-full bg-slate-950 border border-slate-855 rounded-lg py-2 px-3 text-lg text-slate-200 outline-none"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-slate-400 mb-1">Birth Time</label>
+              <label className="block text-base font-medium text-slate-400 mb-1">Birth Time</label>
               <input
                 type="time"
                 required
                 value={timeA}
                 onChange={(e) => setTimeA(e.target.value)}
-                className="w-full bg-slate-950 border border-slate-855 rounded-lg py-2 px-3 text-base text-slate-200 outline-none"
+                className="w-full bg-slate-950 border border-slate-855 rounded-lg py-2 px-3 text-lg text-slate-200 outline-none"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-slate-400 mb-1">Biological Gender</label>
-              <div className="grid grid-cols-2 gap-2 text-sm">
+              <label className="block text-base font-medium text-slate-400 mb-1">Biological Gender</label>
+              <div className="grid grid-cols-2 gap-2 text-base">
                 <button
                   type="button"
                   onClick={() => setGenderA('male')}
@@ -234,33 +234,33 @@ export default function BaziCompatibilityCalculator() {
         <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-4">
           <div className="flex items-center space-x-2 pb-2 border-b border-slate-800">
             <span className="w-2.5 h-2.5 rounded-full bg-red-500"></span>
-            <h3 className="text-base font-serif font-semibold text-slate-100 uppercase tracking-widest">Person B (Partner)</h3>
+            <h3 className="text-lg font-serif font-semibold text-slate-100 uppercase tracking-widest">Person B (Partner)</h3>
           </div>
 
           <div className="space-y-3">
             <div>
-              <label className="block text-sm font-medium text-slate-400 mb-1">Birth Date</label>
+              <label className="block text-base font-medium text-slate-400 mb-1">Birth Date</label>
               <input
                 type="date"
                 required
                 value={dateB}
                 onChange={(e) => setDateB(e.target.value)}
-                className="w-full bg-slate-950 border border-slate-855 rounded-lg py-2 px-3 text-base text-slate-200 outline-none"
+                className="w-full bg-slate-950 border border-slate-855 rounded-lg py-2 px-3 text-lg text-slate-200 outline-none"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-slate-400 mb-1">Birth Time</label>
+              <label className="block text-base font-medium text-slate-400 mb-1">Birth Time</label>
               <input
                 type="time"
                 required
                 value={timeB}
                 onChange={(e) => setTimeB(e.target.value)}
-                className="w-full bg-slate-950 border border-slate-855 rounded-lg py-2 px-3 text-base text-slate-200 outline-none"
+                className="w-full bg-slate-950 border border-slate-855 rounded-lg py-2 px-3 text-lg text-slate-200 outline-none"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-slate-400 mb-1">Biological Gender</label>
-              <div className="grid grid-cols-2 gap-2 text-sm">
+              <label className="block text-base font-medium text-slate-400 mb-1">Biological Gender</label>
+              <div className="grid grid-cols-2 gap-2 text-base">
                 <button
                   type="button"
                   onClick={() => setGenderB('male')}
@@ -299,33 +299,33 @@ export default function BaziCompatibilityCalculator() {
           <div className="flex flex-col sm:flex-row items-center justify-between gap-6 pb-6 border-b border-slate-800">
             <div className="space-y-1 text-center sm:text-left">
               <h3 className="text-xl font-serif text-slate-100 font-medium">BaZi Relationship Chemistry Report</h3>
-              <p className="text-sm text-slate-400">A detailed analysis of Day Masters, spouse houses, and element balances.</p>
+              <p className="text-base text-slate-400">A detailed analysis of Day Masters, spouse houses, and element balances.</p>
             </div>
 
             <div className="relative w-24 h-24 flex flex-col items-center justify-center rounded-full bg-slate-950 border-4 border-amber-500/80 shadow-lg shrink-0">
               <span className="text-2xl font-mono font-bold text-slate-100">{score}%</span>
-              <span className="text-xs text-amber-500 uppercase font-semibold">Match Score</span>
+              <span className="text-sm text-amber-500 uppercase font-semibold">Match Score</span>
             </div>
           </div>
 
           {/* Quick Identities */}
           <div className="grid grid-cols-2 gap-4 text-center bg-slate-950/60 p-4 border border-slate-850 rounded-xl">
             <div>
-              <div className="text-xs text-slate-500 uppercase">Person A Day Master</div>
-              <div className="text-base font-semibold text-slate-100 mt-0.5" style={{ color: ELEMENTS_MAP[report.elA]?.color }}>
+              <div className="text-sm text-slate-500 uppercase">Person A Day Master</div>
+              <div className="text-lg font-semibold text-slate-100 mt-0.5" style={{ color: ELEMENTS_MAP[report.elA]?.color }}>
                 {report.dmA}
               </div>
             </div>
             <div>
-              <div className="text-xs text-slate-500 uppercase">Person B Day Master</div>
-              <div className="text-base font-semibold text-slate-100 mt-0.5" style={{ color: ELEMENTS_MAP[report.elB]?.color }}>
+              <div className="text-sm text-slate-500 uppercase">Person B Day Master</div>
+              <div className="text-lg font-semibold text-slate-100 mt-0.5" style={{ color: ELEMENTS_MAP[report.elB]?.color }}>
                 {report.dmB}
               </div>
             </div>
           </div>
 
           {/* Analysis Cards */}
-          <div className="space-y-4 text-sm sm:text-base">
+          <div className="space-y-4 text-base sm:text-lg">
             {/* Day master interaction */}
             <div className="bg-slate-950/40 p-4 border border-slate-850 rounded-xl space-y-1">
               <div className="text-amber-500 font-semibold flex items-center space-x-1.5">
@@ -356,8 +356,8 @@ export default function BaziCompatibilityCalculator() {
 
           {/* Final Summary Card */}
           <div className="bg-amber-500/10 border border-amber-500/20 rounded-xl p-4 sm:p-6 text-center">
-            <h4 className="text-amber-500 font-semibold font-serif text-base sm:text-lg mb-2">The Astrology Verdict</h4>
-            <p className="text-sm sm:text-base text-slate-200 leading-relaxed">{report.summary}</p>
+            <h4 className="text-amber-500 font-semibold font-serif text-lg sm:text-xl mb-2">The Astrology Verdict</h4>
+            <p className="text-base sm:text-lg text-slate-200 leading-relaxed">{report.summary}</p>
           </div>
 
         </div>

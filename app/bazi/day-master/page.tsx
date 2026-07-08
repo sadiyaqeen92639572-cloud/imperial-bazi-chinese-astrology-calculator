@@ -46,14 +46,14 @@ export default function DayMastersHubPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12" id="day-masters-hub">
         {/* Intro */}
         <div className="space-y-4 border-b border-slate-900 pb-8 text-center max-w-3xl mx-auto">
-          <div className="inline-flex items-center space-x-1 bg-amber-500/10 text-amber-500 rounded-full px-2.5 py-1 text-sm font-semibold uppercase tracking-wider">
+          <div className="inline-flex items-center space-x-1 bg-amber-500/10 text-amber-500 rounded-full px-2.5 py-1 text-base font-semibold uppercase tracking-wider">
             <Sparkles className="h-3 w-3" />
             <span>Core Identity Profiles</span>
           </div>
           <h1 className="text-3xl sm:text-5xl font-serif text-slate-100 tracking-tight font-medium">
             The 10 Day Masters (Heavenly Stems)
           </h1>
-          <p className="text-base sm:text-lg text-slate-400 leading-relaxed">
+          <p className="text-lg sm:text-xl text-slate-400 leading-relaxed">
             In classical BaZi, the Day Master is the self-element located on the Day of your birth. Click any profile below to explore their specific career, personality, relationship compatibility, and growth patterns.
           </p>
         </div>
@@ -72,25 +72,25 @@ export default function DayMastersHubPage() {
                 <div>
                   <div className="flex justify-between items-center">
                     <span
-                      className="w-10 h-10 rounded-lg flex items-center justify-center font-serif font-bold text-lg text-white"
+                      className="w-10 h-10 rounded-lg flex items-center justify-center font-serif font-bold text-xl text-white"
                       style={{ backgroundColor: elColor }}
                     >
                       {dm.stem}
                     </span>
-                    <span className="text-xs text-slate-500 font-mono uppercase tracking-widest">{dm.polarity}</span>
+                    <span className="text-sm text-slate-500 font-mono uppercase tracking-widest">{dm.polarity}</span>
                   </div>
 
-                  <h2 className="text-lg font-serif font-semibold text-slate-200 mt-4 group-hover:text-amber-400 transition-colors">
+                  <h2 className="text-xl font-serif font-semibold text-slate-200 mt-4 group-hover:text-amber-400 transition-colors">
                     {dm.stem} {dm.element}
                   </h2>
-                  <p className="text-sm text-slate-500 italic mt-0.5">({dm.name})</p>
+                  <p className="text-base text-slate-500 italic mt-0.5">({dm.name})</p>
 
-                  <p className="text-sm text-slate-400 mt-3 leading-relaxed line-clamp-3">
+                  <p className="text-base text-slate-400 mt-3 leading-relaxed line-clamp-3">
                     {dm.summary}
                   </p>
                 </div>
 
-                <div className="pt-4 flex items-center justify-between text-sm font-semibold text-amber-500/95 group-hover:text-amber-400">
+                <div className="pt-4 flex items-center justify-between text-base font-semibold text-amber-500/95 group-hover:text-amber-400">
                   <span>Read full trait guide</span>
                   <ArrowRight className="h-3.5 w-3.5 transform group-hover:translate-x-1 transition-all" />
                 </div>

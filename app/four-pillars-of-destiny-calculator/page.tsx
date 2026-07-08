@@ -45,7 +45,7 @@ export default function FourPillarsCalculatorPage() {
           <h1 className="text-3xl sm:text-5xl font-serif text-slate-100 tracking-tight font-medium">
             Four Pillars of Destiny Calculator (Sì Zhù)
           </h1>
-          <p className="text-base sm:text-lg text-slate-400 leading-relaxed">
+          <p className="text-lg sm:text-xl text-slate-400 leading-relaxed">
             The Four Pillars of Destiny is a classic Chinese philosophical and cosmological system that maps the solar terms at your birth into four time-columns. Map out your life path and check your element balance today.
           </p>
         </div>
@@ -57,11 +57,11 @@ export default function FourPillarsCalculatorPage() {
 
         {/* Educational details */}
         <section className="max-w-4xl mx-auto bg-slate-900/60 border border-slate-850 rounded-2xl p-6 sm:p-8 space-y-4">
-          <h2 className="text-lg font-serif text-slate-100 font-medium flex items-center space-x-2">
+          <h2 className="text-xl font-serif text-slate-100 font-medium flex items-center space-x-2">
             <Compass className="h-5 w-5 text-amber-500" />
             <span>The History of the Four Pillars</span>
           </h2>
-          <div className="text-sm sm:text-base text-slate-300 space-y-4 leading-relaxed">
+          <div className="text-base sm:text-lg text-slate-300 space-y-4 leading-relaxed">
             <p>
               The system of the Four Pillars of Destiny was founded during the Tang Dynasty (618–907 AD) by master Li Xu-Zhong, who initially calculated charts using only the Year, Month, and Day pillars. Later, during the Song Dynasty, master Xu Zi-Ping refined the system by incorporating the <strong>Hour Pillar</strong> and establishing the <strong>Day Master</strong> as the true center of the person.
             </p>

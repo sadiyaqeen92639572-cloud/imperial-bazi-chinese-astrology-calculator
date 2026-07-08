@@ -43,26 +43,26 @@ export default function ArticleView({ slug }: ArticleViewProps) {
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12" id={`article-${slug}`}>
         {/* Header */}
         <div className="space-y-4 border-b border-slate-900 pb-8">
-          <div className="inline-flex items-center space-x-1 bg-amber-500/10 text-amber-500 rounded-full px-2.5 py-1 text-sm font-semibold uppercase tracking-wider">
+          <div className="inline-flex items-center space-x-1 bg-amber-500/10 text-amber-500 rounded-full px-2.5 py-1 text-base font-semibold uppercase tracking-wider">
             <BookOpen className="h-3 w-3" />
             <span>Astrology Library</span>
           </div>
           <h1 className="text-3xl sm:text-5xl font-serif text-slate-100 tracking-tight font-medium">
             {article.h1}
           </h1>
-          <p className="text-base sm:text-lg text-slate-400 leading-relaxed max-w-3xl">
+          <p className="text-lg sm:text-xl text-slate-400 leading-relaxed max-w-3xl">
             {article.metaDesc}
           </p>
         </div>
 
         {/* Content Sections */}
-        <div className="space-y-10 text-slate-300 leading-relaxed text-base sm:text-lg" id="article-body">
+        <div className="space-y-10 text-slate-300 leading-relaxed text-lg sm:text-xl" id="article-body">
           {article.sections.map((section, idx) => (
             <div key={idx} className="space-y-3">
-              <h2 className="text-lg sm:text-xl font-serif text-slate-100 font-medium tracking-wide">
+              <h2 className="text-xl sm:text-xl font-serif text-slate-100 font-medium tracking-wide">
                 {idx + 1}. {section.heading}
               </h2>
-              <p className="text-slate-300 text-sm sm:text-base">{section.content}</p>
+              <p className="text-slate-300 text-base sm:text-lg">{section.content}</p>
             </div>
           ))}
         </div>

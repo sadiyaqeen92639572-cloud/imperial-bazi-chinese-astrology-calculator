@@ -52,14 +52,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           {/* Logo Column */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2 text-amber-500 font-semibold text-lg">
+            <div className="flex items-center space-x-2 text-amber-500 font-semibold text-xl">
               <Sparkles className="h-6 w-6" />
               <span className="font-serif tracking-wide text-xl text-slate-100">Imperial BaZi</span>
             </div>
-            <p className="text-base text-slate-400 leading-relaxed">
+            <p className="text-lg text-slate-400 leading-relaxed">
               Professional-grade Chinese astrology destiny analysis (Four Pillars of Destiny) in clear, modern English. Built with high astronomical precision.
             </p>
-            <div className="text-sm text-slate-500">
+            <div className="text-base text-slate-500">
               Disclaimer: BaZi chart interpretations are for educational, psychological reflection, and self-understanding purposes.
             </div>
           </div>
@@ -67,8 +67,8 @@ export default function Footer() {
           {/* Dynamic Sections */}
           {sections.map((section) => (
             <div key={section.title} className="space-y-4">
-              <h3 className="text-slate-200 font-medium text-base tracking-wider uppercase">{section.title}</h3>
-              <ul className="space-y-2 text-base">
+              <h3 className="text-slate-200 font-medium text-lg tracking-wider uppercase">{section.title}</h3>
+              <ul className="space-y-2 text-lg">
                 {section.links.map((link) => (
                   <li key={link.name}>
                     <Link
@@ -85,7 +85,7 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-sm text-slate-500">
+        <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-base text-slate-500">
           <div>
             &copy; {currentYear} Imperial BaZi. All rights reserved.
           </div>

@@ -45,7 +45,7 @@ export default function BaziCalculatorPage() {
           <h1 className="text-3xl sm:text-5xl font-serif text-slate-100 tracking-tight font-medium">
             Free Professional BaZi Calculator
           </h1>
-          <p className="text-base sm:text-lg text-slate-400 leading-relaxed">
+          <p className="text-lg sm:text-xl text-slate-400 leading-relaxed">
             Generate your accurate Chinese Solar Astrology birth chart — known as BaZi (八字) or, in Cantonese and Hokkien communities, Paht Chee. Our engine automatically calculates local solar offsets based on birthplace longitude, ensuring correct Hour Pillars and calendar boundaries.
           </p>
         </div>
@@ -58,13 +58,13 @@ export default function BaziCalculatorPage() {
         {/* Technical Explanations beneath the calculator */}
         <section className="max-w-4xl mx-auto bg-slate-900/60 border border-slate-850 rounded-2xl p-6 sm:p-8 space-y-6" id="calculator-guide-text">
           <h2 className="text-xl font-serif text-slate-200 tracking-wide">How the BaZi Calculation Works</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm sm:text-base text-slate-300">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-base sm:text-lg text-slate-300">
             <div className="space-y-2">
               <h3 className="font-semibold text-amber-500 flex items-center">
                 <Clock className="h-4 w-4 mr-1" />
                 Local Solar Time Adjustment
               </h3>
-              <p className="leading-relaxed text-slate-400 text-sm">
+              <p className="leading-relaxed text-slate-400 text-base">
                 Clock zones are artificial. True BaZi depends on the position of the physical Sun. If you provide your birthplace longitude, our engine adjusts standard clock time into true solar time. This ensures you get the real Hour Pillar, which changes exactly every 120 minutes.
               </p>
             </div>
@@ -73,7 +73,7 @@ export default function BaziCalculatorPage() {
                 <Compass className="h-4 w-4 mr-1" />
                 Finding Your Useful God
               </h3>
-              <p className="leading-relaxed text-slate-400 text-sm">
+              <p className="leading-relaxed text-slate-400 text-base">
                 By assessing whether your Day Master element is supported by the birth season (the month earthly branch) and other supportive stems, our system computes your chart strength. It then recommends the specific elements that help you restore energetic stability and flow.
               </p>
             </div>

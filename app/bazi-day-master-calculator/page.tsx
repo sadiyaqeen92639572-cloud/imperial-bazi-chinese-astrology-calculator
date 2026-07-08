@@ -45,7 +45,7 @@ export default function DayMasterCalculatorPage() {
           <h1 className="text-3xl sm:text-5xl font-serif text-slate-100 tracking-tight font-medium">
             BaZi Day Master Calculator
           </h1>
-          <p className="text-base sm:text-lg text-slate-400 leading-relaxed">
+          <p className="text-lg sm:text-xl text-slate-400 leading-relaxed">
             In Chinese Metaphysics, the Day Master (the Heavenly Stem of your birth day) is considered your core anchor. Find your Day Master element and check how its polarity shapes your personality, strengths, and spiritual alignment.
           </p>
         </div>
@@ -57,11 +57,11 @@ export default function DayMasterCalculatorPage() {
 
         {/* Education */}
         <section className="max-w-4xl mx-auto bg-slate-900/60 border border-slate-850 rounded-2xl p-6 sm:p-8 space-y-4">
-          <h2 className="text-lg font-serif text-slate-100 font-medium flex items-center space-x-2">
+          <h2 className="text-xl font-serif text-slate-100 font-medium flex items-center space-x-2">
             <Sparkles className="h-5 w-5 text-amber-500" />
             <span>Why is the Day Master Your True Self?</span>
           </h2>
-          <div className="text-sm sm:text-base text-slate-300 space-y-4 leading-relaxed">
+          <div className="text-base sm:text-lg text-slate-300 space-y-4 leading-relaxed">
             <p>
               While the public is familiar with the 12 Chinese Zodiac animals (based on the birth year), professional astrologers focus primarily on the <strong>Day Master</strong>. The Day Master reflects your true character and internal reactions to environments, whereas the year animal represents your social circle and grandparent roots.
             </p>

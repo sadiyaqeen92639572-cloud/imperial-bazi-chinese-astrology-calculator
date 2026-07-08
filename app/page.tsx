@@ -49,7 +49,7 @@ export default function HomePage() {
 
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
           {/* Tag */}
-          <div className="inline-flex items-center space-x-1 bg-amber-500/10 text-amber-500 rounded-full px-3 py-1 text-sm font-semibold uppercase tracking-wider">
+          <div className="inline-flex items-center space-x-1 bg-amber-500/10 text-amber-500 rounded-full px-3 py-1 text-base font-semibold uppercase tracking-wider">
             <Sparkles className="h-3 w-3" />
             <span>Premium Chinese Metaphysics</span>
           </div>
@@ -60,7 +60,7 @@ export default function HomePage() {
           </h1>
 
           {/* Subheading */}
-          <p className="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl sm:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
             Translate your Gregorian birth date into the Four Pillars of Destiny (Sì Zhù). Discover your Day Master, balance your Five Elements, and navigate your 10-year major Luck Pillars.
           </p>
 
@@ -68,7 +68,7 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
             <Link
               href="/bazi-calculator/"
-              className="w-full sm:w-auto bg-amber-500 hover:bg-amber-600 text-slate-950 font-semibold py-3.5 px-8 rounded-xl transition-all shadow-lg shadow-amber-500/10 flex items-center justify-center space-x-2 text-lg"
+              className="w-full sm:w-auto bg-amber-500 hover:bg-amber-600 text-slate-950 font-semibold py-3.5 px-8 rounded-xl transition-all shadow-lg shadow-amber-500/10 flex items-center justify-center space-x-2 text-xl"
               id="hero-cta-calc"
             >
               <Compass className="h-5 w-5" />
@@ -77,7 +77,7 @@ export default function HomePage() {
             </Link>
             <Link
               href="/bazi-reading/"
-              className="w-full sm:w-auto bg-slate-900 hover:bg-slate-800 text-slate-300 font-medium py-3.5 px-8 rounded-xl border border-slate-800 transition-all flex items-center justify-center space-x-2 text-lg"
+              className="w-full sm:w-auto bg-slate-900 hover:bg-slate-800 text-slate-300 font-medium py-3.5 px-8 rounded-xl border border-slate-800 transition-all flex items-center justify-center space-x-2 text-xl"
               id="hero-cta-read"
             >
               <BookOpen className="h-5 w-5 text-slate-400" />
@@ -92,7 +92,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-2">
             <h2 className="text-2xl sm:text-3xl font-serif text-slate-100 tracking-wide font-medium">The Core Pillars of Astrology</h2>
-            <p className="text-base sm:text-lg text-slate-400">
+            <p className="text-lg sm:text-xl text-slate-400">
               Our professional engine calculates astronomical cycles based on true solar terms rather than generic years.
             </p>
           </div>
@@ -103,11 +103,11 @@ export default function HomePage() {
               <div className="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-500">
                 <Sparkles className="h-6 w-6" />
               </div>
-              <h3 className="text-lg font-serif text-slate-100 font-medium">1. Locate Your Day Master</h3>
-              <p className="text-sm sm:text-base text-slate-400 leading-relaxed">
+              <h3 className="text-xl font-serif text-slate-100 font-medium">1. Locate Your Day Master</h3>
+              <p className="text-base sm:text-lg text-slate-400 leading-relaxed">
                 The Day Master is the Heavenly Stem of your birth day. It is your astrological soul DNA, revealing your core character, intrinsic talents, and psychological strengths.
               </p>
-              <Link href="/bazi/day-master/" className="text-sm font-semibold text-amber-500 hover:underline flex items-center space-x-1">
+              <Link href="/bazi/day-master/" className="text-base font-semibold text-amber-500 hover:underline flex items-center space-x-1">
                 <span>Explore all 10 Day Masters</span>
                 <ArrowRight className="h-3 w-3" />
               </Link>
@@ -118,11 +118,11 @@ export default function HomePage() {
               <div className="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-500">
                 <Compass className="h-6 w-6" />
               </div>
-              <h3 className="text-lg font-serif text-slate-100 font-medium">2. Balance Five Elements</h3>
-              <p className="text-sm sm:text-base text-slate-400 leading-relaxed">
+              <h3 className="text-xl font-serif text-slate-100 font-medium">2. Balance Five Elements</h3>
+              <p className="text-base sm:text-lg text-slate-400 leading-relaxed">
                 Wood, Fire, Earth, Metal, and Water shape your physical and mental balance. Discover missing elements, and find your Useful God (Yong Shen) to bring energy back into sync.
               </p>
-              <Link href="/bazi/five-elements-chart/" className="text-sm font-semibold text-amber-500 hover:underline flex items-center space-x-1">
+              <Link href="/bazi/five-elements-chart/" className="text-base font-semibold text-amber-500 hover:underline flex items-center space-x-1">
                 <span>Learn about element charts</span>
                 <ArrowRight className="h-3 w-3" />
               </Link>
@@ -133,11 +133,11 @@ export default function HomePage() {
               <div className="w-12 h-12 rounded-xl bg-red-500/10 flex items-center justify-center text-red-500">
                 <Heart className="h-6 w-6" />
               </div>
-              <h3 className="text-lg font-serif text-slate-100 font-medium">3. Relationship Synergy</h3>
-              <p className="text-sm sm:text-base text-slate-400 leading-relaxed">
+              <h3 className="text-xl font-serif text-slate-100 font-medium">3. Relationship Synergy</h3>
+              <p className="text-base sm:text-lg text-slate-400 leading-relaxed">
                 By evaluating spouse house stems and earthly branch combinations/clashes, our engine calculates relationship friction, marriage ease, and alchemical attraction points.
               </p>
-              <Link href="/bazi-compatibility-guide/" className="text-sm font-semibold text-amber-500 hover:underline flex items-center space-x-1">
+              <Link href="/bazi-compatibility-guide/" className="text-base font-semibold text-amber-500 hover:underline flex items-center space-x-1">
                 <span>Read compatibility guide</span>
                 <ArrowRight className="h-3 w-3" />
               </Link>
@@ -150,12 +150,12 @@ export default function HomePage() {
       <section className="bg-slate-950 py-16 px-4" id="bazi-algorithm-section">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-serif text-slate-100 tracking-wide font-medium mb-2">How This Calculator Works — Algorithm &amp; Method</h2>
-          <p className="text-sm text-slate-500 uppercase tracking-widest mb-8">Library: lunar-javascript (astronomical) · Deterministic calculation — no AI interpolation</p>
+          <p className="text-base text-slate-500 uppercase tracking-widest mb-8">Library: lunar-javascript (astronomical) · Deterministic calculation — no AI interpolation</p>
 
           {/* Constants table */}
-          <h3 className="text-lg font-serif text-slate-200 mb-4">Core Structures (Traditional Chinese Metaphysics)</h3>
+          <h3 className="text-xl font-serif text-slate-200 mb-4">Core Structures (Traditional Chinese Metaphysics)</h3>
           <div className="overflow-x-auto mb-8">
-            <table className="w-full text-base border-collapse">
+            <table className="w-full text-lg border-collapse">
               <thead><tr className="bg-slate-800">
                 <th className="text-left px-4 py-3 text-slate-300">Structure</th>
                 <th className="text-left px-4 py-3 text-slate-300">Count</th>
@@ -173,8 +173,8 @@ export default function HomePage() {
           </div>
 
           {/* Formulas code block */}
-          <h3 className="text-lg font-serif text-slate-200 mb-4">Calculation Algorithms</h3>
-          <pre className="bg-slate-900 border border-slate-700 rounded-xl p-6 text-sm leading-7 overflow-x-auto mb-8 font-mono">
+          <h3 className="text-xl font-serif text-slate-200 mb-4">Calculation Algorithms</h3>
+          <pre className="bg-slate-900 border border-slate-700 rounded-xl p-6 text-base leading-7 overflow-x-auto mb-8 font-mono">
             <code>{`// — Pillar extraction (all 4 pillars) —
 solar   = Solar.fromYmdHms(year, month, day, hour, min, 0)
 lunar   = solar.getLunar()
@@ -226,7 +226,7 @@ start_age    = bazi.getYun(genderCode, solar).getStartAge()
 local_solar_time = birth_time + 4min × (longitude − timezone_standard_longitude)`}</code>
           </pre>
 
-          <p className="text-sm text-slate-500 leading-relaxed">
+          <p className="text-base text-slate-500 leading-relaxed">
             Calculations use the <strong className="text-slate-400">lunar-javascript</strong> library for accurate solar term (节气) boundary detection required for Month Pillar accuracy. Day Master may vary by ±1 day for births near midnight or solar term crossings. Hour Pillar requires birth time (two-hour segments: 子时 23:00–01:00, 丑时 01:00–03:00, etc.). Longitude correction adjusts for local solar time deviation from standard timezone meridian.
           </p>
         </div>
@@ -236,13 +236,13 @@ local_solar_time = birth_time + 4min × (longitude − timezone_standard_longitu
       <section className="bg-slate-950 py-16 text-center max-w-4xl mx-auto px-4" id="home-cta-section">
         <div className="bg-gradient-to-r from-slate-900 to-slate-900 border border-slate-850 p-8 sm:p-12 rounded-2xl space-y-6">
           <h2 className="text-xl sm:text-2xl font-serif text-slate-100 font-medium">Ready to discover your destiny profile?</h2>
-          <p className="text-sm sm:text-base text-slate-400 max-w-xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg text-slate-400 max-w-xl mx-auto leading-relaxed">
             Generate your high-accuracy four pillars report in seconds. Fully responsive and completely free of charge.
           </p>
           <div className="pt-2">
             <Link
               href="/bazi-calculator/"
-              className="inline-flex bg-amber-500 hover:bg-amber-600 text-slate-950 font-semibold py-3 px-8 rounded-xl transition-all shadow-md items-center space-x-2 text-base"
+              className="inline-flex bg-amber-500 hover:bg-amber-600 text-slate-950 font-semibold py-3 px-8 rounded-xl transition-all shadow-md items-center space-x-2 text-lg"
               id="cta-bottom"
             >
               <span>Calculate My Chart Now</span>

@@ -107,11 +107,11 @@ export default function RelatedPages({ currentPath }: RelatedPagesProps) {
             className="group flex flex-col justify-between p-4 bg-slate-950 border border-slate-850 hover:border-amber-500/50 rounded-lg hover:shadow-lg transition-all"
           >
             <div>
-              <h3 className="text-base font-semibold text-slate-100 group-hover:text-amber-400 transition-colors flex items-center justify-between">
+              <h3 className="text-lg font-semibold text-slate-100 group-hover:text-amber-400 transition-colors flex items-center justify-between">
                 <span>{link.name}</span>
                 <ArrowRight className="h-3.5 w-3.5 text-slate-500 group-hover:text-amber-400 transform group-hover:translate-x-1 transition-all" />
               </h3>
-              <p className="text-sm text-slate-400 mt-2 leading-relaxed">{link.desc}</p>
+              <p className="text-base text-slate-400 mt-2 leading-relaxed">{link.desc}</p>
             </div>
           </Link>
         ))}
