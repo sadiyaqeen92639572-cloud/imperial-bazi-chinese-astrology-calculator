@@ -8,14 +8,21 @@ export const metadata: Metadata = {
   description: 'Free professional-grade BaZi (Four Pillars of Destiny) calculator and astrology interpretation guide in clean, modern English.',
   metadataBase: new URL('https://fourpillarscalculator.com'),
   alternates: { canonical: 'https://fourpillarscalculator.com' },
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.png', type: 'image/png' },
+    ],
+  },
   openGraph: {
     title: 'Imperial BaZi - Professional Chinese Astrology Calculator',
     description: 'Free professional-grade BaZi (Four Pillars of Destiny) calculator and astrology interpretation guide in clean, modern English.',
     url: 'https://fourpillarscalculator.com',
     siteName: 'Imperial Bazi',
     type: 'website',
+    images: [{ url: 'https://fourpillarscalculator.com/og-image.png', width: 1200, height: 630 }],
   },
-  twitter: { card: 'summary_large_image' },
+  twitter: { card: 'summary_large_image', images: ['https://fourpillarscalculator.com/og-image.png'] },
   verification: { google: '9_5I2PdRH9zDVCNof-NAkALskfkDyQZI-sQ1I1qVDy4' },
 };
 

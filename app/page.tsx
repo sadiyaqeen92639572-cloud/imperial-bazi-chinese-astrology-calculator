@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     url: 'https://fourpillarscalculator.com/',
     siteName: 'Imperial Bazi',
     type: 'website',
-    images: [{ url: 'https://fourpillarscalculator.com/og-image.jpg', width: 1200, height: 630 }],
+    images: [{ url: 'https://fourpillarscalculator.com/og-image.png', width: 1200, height: 630 }],
   },
-  twitter: { card: 'summary_large_image', images: ['https://fourpillarscalculator.com/og-image.jpg'] },
+  twitter: { card: 'summary_large_image', images: ['https://fourpillarscalculator.com/og-image.png'] },
 };
 
 export default function HomePage() {
