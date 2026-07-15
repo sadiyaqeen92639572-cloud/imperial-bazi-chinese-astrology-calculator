@@ -3,6 +3,14 @@ export interface FAQItem {
   answer: string;
 }
 
+const GESMINE_ORG = {
+  '@type': 'Organization',
+  'name': 'Imperial BaZi',
+  'legalName': 'Gesmine-Invest Limited',
+  'identifier': { '@type': 'PropertyValue', 'propertyID': 'UK Company Number', 'value': '14120136' },
+  'address': { '@type': 'PostalAddress', 'streetAddress': 'Hardy House, 269 Poynders Gardens', 'addressLocality': 'London', 'postalCode': 'SW4 8PQ', 'addressCountry': 'GB' }
+};
+
 export function getSoftwareApplicationSchema(name: string, description: string, url: string) {
   return {
     '@context': 'https://schema.org',
@@ -27,13 +35,9 @@ export function getArticleSchema(title: string, description: string, url: string
     'headline': title,
     'description': description,
     'image': image || 'https://fourpillarscalculator.com/og-image.jpg',
-    'author': {
-      '@type': 'Organization',
-      'name': 'Imperial BaZi'
-    },
+    'author': GESMINE_ORG,
     'publisher': {
-      '@type': 'Organization',
-      'name': 'Imperial BaZi',
+      ...GESMINE_ORG,
       'logo': {
         '@type': 'ImageObject',
         'url': 'https://fourpillarscalculator.com/logo.png'

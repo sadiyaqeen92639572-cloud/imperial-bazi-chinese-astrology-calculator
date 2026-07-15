@@ -95,6 +95,9 @@ export default function Footer() {
             <Link href="/bazi-calculator/" className="hover:text-slate-300">Calculator</Link>
           </div>
         </div>
+        <div className="text-[11px] text-slate-600 mt-4">
+          Imperial BaZi is part of Gesmine-Invest Limited, registered UK company number 14120136, registered office address at Hardy House, 269 Poynders Gardens, London, London, United Kingdom, SW4 8PQ.
+        </div>
       </div>
     </footer>
   );
