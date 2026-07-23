@@ -7,7 +7,6 @@ export const metadata: Metadata = {
   title: 'Imperial BaZi - Professional Chinese Astrology Calculator',
   description: 'Free professional-grade BaZi (Four Pillars of Destiny) calculator and astrology interpretation guide in clean, modern English.',
   metadataBase: new URL('https://fourpillarscalculator.com'),
-  alternates: { canonical: 'https://fourpillarscalculator.com' },
   icons: {
     icon: [
       { url: '/favicon.svg', type: 'image/svg+xml' },
