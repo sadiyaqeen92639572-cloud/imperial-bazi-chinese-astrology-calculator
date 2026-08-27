@@ -34,13 +34,13 @@ export function getArticleSchema(title: string, description: string, url: string
     '@type': 'Article',
     'headline': title,
     'description': description,
-    'image': image || 'https://fourpillarscalculator.com/og-image.jpg',
+    'image': image || 'https://fourpillarscalculator.com/og-image.png',
     'author': GESMINE_ORG,
     'publisher': {
       ...GESMINE_ORG,
       'logo': {
         '@type': 'ImageObject',
-        'url': 'https://fourpillarscalculator.com/logo.png'
+        'url': 'https://fourpillarscalculator.com/og-image.png'
       }
     },
     'mainEntityOfPage': {

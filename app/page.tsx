@@ -229,6 +229,9 @@ local_solar_time = birth_time + 4min × (longitude − timezone_standard_longitu
           <p className="text-base text-slate-500 leading-relaxed">
             Calculations use the <strong className="text-slate-400">lunar-javascript</strong> library for accurate solar term (节气) boundary detection required for Month Pillar accuracy. Day Master may vary by ±1 day for births near midnight or solar term crossings. Hour Pillar requires birth time (two-hour segments: 子时 23:00–01:00, 丑时 01:00–03:00, etc.). Longitude correction adjusts for local solar time deviation from standard timezone meridian.
           </p>
+          <p className="text-base text-slate-500 leading-relaxed mt-4">
+            New to the system? Start with <Link href="/how-to-read-bazi-chart/" className="text-amber-500 hover:underline">how to read a BaZi chart</Link> step by step, then go deeper on <Link href="/bazi-chart-interpretation/" className="text-amber-500 hover:underline">pillar-by-pillar interpretation</Link> and <Link href="/bazi-personality-analysis/" className="text-amber-500 hover:underline">what your chart says about personality</Link>. For the raw four-column layout, use the <Link href="/four-pillars-of-destiny-calculator/" className="text-amber-500 hover:underline">Four Pillars of Destiny calculator</Link>.
+          </p>
         </div>
       </section>
 

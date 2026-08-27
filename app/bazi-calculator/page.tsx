@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import BaziCalculator from '@/components/BaziCalculator';
 import RelatedPages from '@/components/RelatedPages';
 import { getSoftwareApplicationSchema, getFAQPageSchema } from '@/lib/seo';
@@ -78,6 +79,9 @@ export default function BaziCalculatorPage() {
               </p>
             </div>
           </div>
+          <p className="leading-relaxed text-slate-400 text-base border-t border-slate-850 pt-4">
+            Once you have your chart, learn <Link href="/how-to-read-bazi-chart/" className="text-amber-500 hover:underline">how to read a BaZi chart</Link> from the ground up, work through a full <Link href="/bazi-chart-interpretation/" className="text-amber-500 hover:underline">pillar-by-pillar interpretation</Link>, and see <Link href="/bazi-personality-analysis/" className="text-amber-500 hover:underline">what your Day Master reveals about personality</Link>. Prefer the plain four-column view? Use the <Link href="/four-pillars-of-destiny-calculator/" className="text-amber-500 hover:underline">Four Pillars of Destiny calculator</Link>.
+          </p>
         </section>
 
         {/* Internal linking */}

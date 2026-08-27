@@ -153,7 +153,7 @@ export const ARTICLES_DATA: Record<string, ArticleContent> = {
         content: 'BaZi integrates four columns of time (Year, Month, Day, and Hour), producing eight characters. It evaluates your Day Master, monthly seasons, and 10-year luck shifts, offering a personalized blueprint of exceptional depth.'
       }
     ],
-    relatedSlugs: ['bazi-reading', 'bazi-calculator'],
+    relatedSlugs: ['bazi-vs-feng-shui', 'bazi-personality-analysis', 'bazi-reading', 'bazi-calculator'],
     schemaType: 'Article'
   },
   'bazi-vs-feng-shui': {
@@ -172,7 +172,7 @@ export const ARTICLES_DATA: Record<string, ArticleContent> = {
         content: 'Feng Shui represents your Earth Luck (Di). It is the energy flow of your physical environment. By arranging your home, office, and bed to match your favorable BaZi elements, you can support your health and career.'
       }
     ],
-    relatedSlugs: ['bazi-reading', 'bazi-calculator'],
+    relatedSlugs: ['bazi-vs-chinese-zodiac', 'bazi-yearly-forecast', 'bazi-reading', 'bazi-calculator'],
     schemaType: 'Article'
   },
   'bazi-yearly-forecast': {

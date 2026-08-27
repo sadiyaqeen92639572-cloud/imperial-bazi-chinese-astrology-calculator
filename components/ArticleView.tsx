@@ -1,5 +1,3 @@
-'use client';
-
 import React from 'react';
 import { ARTICLES_DATA } from '@/lib/data/articles';
 import { getArticleSchema, getHowToSchema } from '@/lib/seo';

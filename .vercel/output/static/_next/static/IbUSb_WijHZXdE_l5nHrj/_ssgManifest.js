@@ -1,1 +1,0 @@
-self.__SSG_MANIFEST=new Set(["\u002Fbazi\u002Fday-master\u002F[stem]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()

@@ -1,14 +1,40 @@
-'use client';
-
 import React from 'react';
 import Link from 'next/link';
 import { Link2, ArrowRight } from 'lucide-react';
+import { ARTICLES_DATA } from '@/lib/data/articles';
 
 export interface LinkItem {
   name: string;
   href: string;
   desc: string;
 }
+
+// Registry of every indexable page, keyed by the bare slug used in each
+// article's `relatedSlugs` array. Lets a curated relation resolve to a card
+// without hand-maintaining a per-page link list.
+const PAGE_META: Record<string, LinkItem> = {
+  'bazi-calculator': { name: 'Core BaZi Calculator', href: '/bazi-calculator/', desc: 'Generate your complete Four Pillars of Destiny chart from your birth details.' },
+  'bazi-day-master-calculator': { name: 'Day Master Calculator', href: '/bazi-day-master-calculator/', desc: 'Find your primary Heavenly Stem element and core nature.' },
+  'bazi-10-year-luck-calculator': { name: '10-Year Luck Calculator', href: '/bazi-10-year-luck-calculator/', desc: 'Trace your major decade life-cycles and their timing.' },
+  'bazi-compatibility-calculator': { name: 'Compatibility Calculator', href: '/bazi-compatibility-calculator/', desc: 'Check elemental harmony between two BaZi charts.' },
+  'four-pillars-of-destiny-calculator': { name: 'Four Pillars Calculator', href: '/four-pillars-of-destiny-calculator/', desc: 'The full Year, Month, Day, and Hour pillar breakdown.' },
+  'bazi-yearly-forecast-calculator': { name: 'Yearly Forecast Calculator', href: '/bazi-yearly-forecast-calculator/', desc: 'Test how the current year stems interact with your Day Master.' },
+  'bazi-reading': { name: 'Destiny Reading Guide', href: '/bazi-reading/', desc: 'A plain-English overview of Day Master, elements, and luck pillars.' },
+  'bazi-chart-interpretation': { name: 'Chart Interpretation Guide', href: '/bazi-chart-interpretation/', desc: 'What the Year, Month, Day, and Hour pillars each represent.' },
+  'how-to-read-bazi-chart': { name: 'How to Read a Chart', href: '/how-to-read-bazi-chart/', desc: 'A step-by-step sequential tutorial for absolute beginners.' },
+  'bazi-personality-analysis': { name: 'Personality Analysis', href: '/bazi-personality-analysis/', desc: 'Unpack the psychological profile behind your stems.' },
+  'bazi-compatibility-guide': { name: 'Compatibility Guide', href: '/bazi-compatibility-guide/', desc: 'How elements match for marriage, love, and working relationships.' },
+  'bazi-vs-chinese-zodiac': { name: 'BaZi vs Chinese Zodiac', href: '/bazi-vs-chinese-zodiac/', desc: 'Why four pillars are more precise than simple animal years.' },
+  'bazi-vs-feng-shui': { name: 'BaZi vs Feng Shui', href: '/bazi-vs-feng-shui/', desc: 'Two branches of Chinese metaphysics and when to use each.' },
+  'bazi-yearly-forecast': { name: 'Yearly Solar Forecast', href: '/bazi-yearly-forecast/', desc: 'Read the current solar-year trends for your chart.' },
+  'ten-gods-explained': { name: 'The Ten Gods Explained', href: '/bazi/ten-gods-explained/', desc: 'The ten relational profiles governing money, power, and creativity.' },
+  'symbolic-stars': { name: 'Symbolic Stars (Shen Sha)', href: '/bazi/symbolic-stars/', desc: 'Peach Blossom, Academic Star, and other auxiliary chart stars.' },
+  'five-elements-chart': { name: 'Five Elements Chart', href: '/bazi/five-elements-chart/', desc: 'Count and balance Wood, Fire, Earth, Metal, and Water.' },
+  'useful-god-explained': { name: 'Useful God (Yong Shen)', href: '/bazi/useful-god-explained/', desc: 'Find the balancing element that decides a favorable year.' },
+  'day-master': { name: '10 Day Masters Hub', href: '/bazi/day-master/', desc: 'Browse the personalities of all ten Heavenly Stems.' },
+  'glossary': { name: 'Astrology Glossary', href: '/glossary/', desc: 'Definitions for stems, branches, elements, and gods.' },
+  'faq': { name: 'Frequently Asked Questions', href: '/faq/', desc: 'Common questions about BaZi and Chinese astrology.' },
+};
 
 const PAGES_LINKS_MAP: Record<string, LinkItem[]> = {
   '/bazi-calculator/': [
@@ -19,14 +45,6 @@ const PAGES_LINKS_MAP: Record<string, LinkItem[]> = {
     { name: 'Five Elements Balance', href: '/bazi/five-elements-chart/', desc: 'Count Wood, Fire, Earth, Metal, and Water occurrences in your chart.' },
     { name: '10-Year Luck Calculator', href: '/bazi-10-year-luck-calculator/', desc: 'Trace your major decade life-cycles and timing.' },
     { name: 'Relationship Compatibility', href: '/bazi-compatibility-calculator/', desc: 'Check chemical harmony between two charts.' },
-  ],
-  '/bazi-reading/': [
-    { name: 'How to Read a Chart', href: '/how-to-read-bazi-chart/', desc: 'A step-by-step sequential tutorial for absolute beginners.' },
-    { name: 'Pillar Interpretation Guide', href: '/bazi-chart-interpretation/', desc: 'What Year, Month, Day, and Hour pillars represent.' },
-    { name: 'Personality Analysis', href: '/bazi-personality-analysis/', desc: 'Unpack the psychological DNA and tendencies behind your stems.' },
-    { name: 'Ten Gods (Deities)', href: '/bazi/ten-gods-explained/', desc: 'How money, power, resources, and peers relate to you.' },
-    { name: 'Five Elements Balance', href: '/bazi/five-elements-chart/', desc: 'See how Wood, Fire, Earth, Metal, and Water shape your charts.' },
-    { name: 'Astrology Glossary', href: '/glossary/', desc: 'Standard definitions for major Chinese metaphysics terms.' },
   ],
   '/bazi-day-master-calculator/': [
     { name: '10 Day Masters Hub', href: '/bazi/day-master/', desc: 'Browse the personalities of all ten Heavenly Stems.' },
@@ -68,30 +86,64 @@ const PAGES_LINKS_MAP: Record<string, LinkItem[]> = {
     { name: 'BaZi vs Chinese Zodiac', href: '/bazi-vs-chinese-zodiac/', desc: 'Why four pillars are far more accurate than simple animal years.' },
     { name: 'Astrology Glossary', href: '/glossary/', desc: 'Definitions for stems, branches, and compatibility rules.' },
   ],
-  '/bazi-yearly-forecast/': [
-    { name: 'Yearly Forecast Calculator', href: '/bazi-yearly-forecast-calculator/', desc: 'Test how current year stems interact with your Day Master.' },
-    { name: 'Useful God (Yong Shen)', href: '/bazi/useful-god-explained/', desc: 'Find your balancing element to see if the year is favorable.' },
-    { name: '10-Year Luck Cycle', href: '/bazi-10-year-luck-calculator/', desc: 'Calculate your major life tides.' },
+  '/bazi-10-year-luck-calculator/': [
+    { name: 'Yearly Forecast Calculator', href: '/bazi-yearly-forecast-calculator/', desc: 'Test how current-year stems interact with your Day Master.' },
+    { name: 'Useful God (Yong Shen)', href: '/bazi/useful-god-explained/', desc: 'Find your balancing element to judge whether a cycle is favorable.' },
+    { name: 'Destiny Reading Guide', href: '/bazi-reading/', desc: 'Where luck pillars sit in a full chart reading.' },
+    { name: 'Core BaZi Calculator', href: '/bazi-calculator/', desc: 'Generate the full chart your luck pillars derive from.' },
+  ],
+  '/four-pillars-of-destiny-calculator/': [
+    { name: 'How to Read a Chart', href: '/how-to-read-bazi-chart/', desc: 'A step-by-step tutorial for reading your four pillars.' },
+    { name: 'Chart Interpretation Guide', href: '/bazi-chart-interpretation/', desc: 'What each of the four pillars represents.' },
+    { name: 'Day Master Calculator', href: '/bazi-day-master-calculator/', desc: 'Isolate the Day Stem at the centre of your chart.' },
+    { name: 'Core BaZi Calculator', href: '/bazi-calculator/', desc: 'The same engine with the full reading view.' },
   ],
   '/bazi-yearly-forecast-calculator/': [
     { name: 'Yearly Solar Forecast', href: '/bazi-yearly-forecast/', desc: 'Read our comprehensive solar year forecast.' },
     { name: 'Useful God Explained', href: '/bazi/useful-god-explained/', desc: 'Understand the concept of Yong Shen in forecasting.' },
     { name: '10-Year Luck Cycle', href: '/bazi-10-year-luck-calculator/', desc: 'Look up your ten-year luck pillars.' },
-  ]
+  ],
+  '/glossary/': [
+    { name: 'How to Read a Chart', href: '/how-to-read-bazi-chart/', desc: 'See the glossary terms used in a real reading.' },
+    { name: 'The Ten Gods Explained', href: '/bazi/ten-gods-explained/', desc: 'Deep-dive on the ten relational profiles.' },
+    { name: 'Five Elements Chart', href: '/bazi/five-elements-chart/', desc: 'How the five elements are counted and balanced.' },
+    { name: 'Core BaZi Calculator', href: '/bazi-calculator/', desc: 'Generate a chart to apply the definitions.' },
+  ],
+  '/faq/': [
+    { name: 'Destiny Reading Guide', href: '/bazi-reading/', desc: 'A fuller walk-through of what a reading covers.' },
+    { name: 'How to Read a Chart', href: '/how-to-read-bazi-chart/', desc: 'Step-by-step beginner tutorial.' },
+    { name: 'Astrology Glossary', href: '/glossary/', desc: 'Definitions for every term in the FAQ answers.' },
+    { name: 'Core BaZi Calculator', href: '/bazi-calculator/', desc: 'Try the calculator the FAQ refers to.' },
+  ],
 };
+
+function fromRelatedSlugs(slugs: string[]): LinkItem[] {
+  return slugs.map(s => PAGE_META[s]).filter((x): x is LinkItem => Boolean(x));
+}
 
 interface RelatedPagesProps {
   currentPath: string;
 }
 
 export default function RelatedPages({ currentPath }: RelatedPagesProps) {
-  // If this is a stem page, let's use the special 'day-master-stem' list
-  let listKey = currentPath;
+  let links: LinkItem[] | undefined;
+
   if (currentPath.startsWith('/bazi/day-master/') && currentPath !== '/bazi/day-master/') {
-    listKey = 'day-master-stem';
+    links = PAGES_LINKS_MAP['day-master-stem'];
+  } else {
+    const slug = currentPath.replace(/^\/+|\/+$/g, '');
+    const article = ARTICLES_DATA[slug];
+    if (article?.relatedSlugs?.length) {
+      links = fromRelatedSlugs(article.relatedSlugs);
+    }
+    if (!links || links.length === 0) {
+      links = PAGES_LINKS_MAP[currentPath];
+    }
   }
 
-  const links = PAGES_LINKS_MAP[listKey] || PAGES_LINKS_MAP['/bazi-calculator/'];
+  if (!links || links.length === 0) {
+    links = PAGES_LINKS_MAP['/bazi-calculator/'];
+  }
 
   return (
     <section className="bg-slate-900 border border-slate-800 rounded-xl p-6 sm:p-8 mt-12" id="related-pages-section">
