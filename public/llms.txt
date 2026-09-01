@@ -1,0 +1,31 @@
+# Imperial BaZi (fourpillarscalculator.com)
+
+> Free professional-grade BaZi (Four Pillars of Destiny / 八字) calculator and Chinese astrology interpretation guide, written in plain modern English. Enter birth date, time and (optionally) location → the four pillars, Day Master, Five Element balance, Ten Gods, hidden stems, Day Master strength, 10-year luck cycles and yearly forecast. All computation is client-side; no account, no external astrology API. For entertainment / self-reflection, not deterministic prediction.
+
+## What the site is
+
+A Next.js app: one main calculator plus ~20 interpretation pages, calculators for specific sub-readings, a glossary and an FAQ.
+
+## How the chart is computed
+
+- Library: `lunar-javascript` converts the Gregorian birth datetime to the Chinese sexagenary (stem–branch) calendar; pillars are built from year, month, day and hour stem/branch.
+- **True solar time correction:** if longitude + timezone offset are supplied, birth time is shifted by `4 × (longitude − timezoneOffset × 15)` minutes before the lunar conversion, so the hour pillar reflects local solar noon rather than clock time.
+- **Day Master** = the Day Pillar's Heavenly Stem. Each stem/branch maps to one of the Five Elements (Wood/Fire/Earth/Metal/Water) and a Yin/Yang polarity.
+- **Hidden stems:** each Earthly Branch carries 1–3 hidden stems (e.g. 丑 Ox → 己/癸/辛), all mapped to elements and Ten Gods relative to the Day Master.
+- **Day Master strength score:** weighted count of supporting vs draining elements across the 8 characters — Month Branch 40 pts, Day Branch 15, Hour Branch 10, Year Branch 10, Hour Stem 10, etc. (Month branch dominates because it sets the season.) Used to classify the chart as strong/weak and to pick the "useful god".
+- **Ten Gods (十神):** each stem's relationship to the Day Master (Friend, Rob Wealth, Eating God, Hurting Officer, Direct/Indirect Wealth, Direct Officer / Seven Killings, Direct/Indirect Resource).
+- **10-year luck pillars & yearly forecast:** sexagenary cycle projected forward from the month pillar.
+
+## Pages
+
+- [Home](https://fourpillarscalculator.com/) · [/bazi-calculator/](https://fourpillarscalculator.com/bazi-calculator/) · [/four-pillars-of-destiny-calculator/](https://fourpillarscalculator.com/four-pillars-of-destiny-calculator/)
+- Sub-calculators: [/bazi-day-master-calculator/](https://fourpillarscalculator.com/bazi-day-master-calculator/), [/bazi-10-year-luck-calculator/](https://fourpillarscalculator.com/bazi-10-year-luck-calculator/), [/bazi-compatibility-calculator/](https://fourpillarscalculator.com/bazi-compatibility-calculator/), [/bazi-yearly-forecast-calculator/](https://fourpillarscalculator.com/bazi-yearly-forecast-calculator/)
+- Interpretation guides: /bazi-reading/, /bazi-chart-interpretation/, /how-to-read-bazi-chart/, /bazi-personality-analysis/, /bazi-yearly-forecast/, /bazi-compatibility-guide/, /bazi-vs-chinese-zodiac/, /bazi-vs-feng-shui/
+- Concept explainers: /bazi/day-master/ (+ /bazi/day-master/{stem}/ per stem), /bazi/ten-gods-explained/, /bazi/useful-god-explained/, /bazi/five-elements-chart/, /bazi/symbolic-stars/
+- [/glossary/](https://fourpillarscalculator.com/glossary/) · [/faq/](https://fourpillarscalculator.com/faq/)
+
+## Notes for LLMs
+
+- Birth **time** materially changes the hour pillar and often the Day Master strength result; without a known time the hour pillar is omitted.
+- Provide location for the true-solar-time correction, especially for births near a timezone edge.
+- This is a traditional-metaphysics model presented for reflection and entertainment, not a predictive or scientific tool.
