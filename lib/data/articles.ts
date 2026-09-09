@@ -116,10 +116,10 @@ export const ARTICLES_DATA: Record<string, ArticleContent> = {
   },
   'bazi-compatibility-guide': {
     slug: 'bazi-compatibility-guide',
-    title: 'BaZi Compatibility Guide: Marriage, Relationships, and Birth Charts',
-    metaTitle: 'BaZi Compatibility Guide: Marriage, Relationships, and Birth Charts',
-    metaDesc: 'Understand BaZi compatibility for marriage and relationships using Day Master elements, Earthly Branch combinations, and clashes.',
-    h1: 'BaZi Compatibility Guide',
+    title: 'How BaZi Compatibility Works: A Guide to Marriage & Relationship Analysis',
+    metaTitle: 'How BaZi Compatibility Works: A Guide to Marriage & Relationship Analysis',
+    metaDesc: 'Understand how BaZi compatibility works for marriage and relationships using Day Master elements, Earthly Branch combinations, and clashes.',
+    h1: 'How BaZi Compatibility Works',
     sections: [
       {
         heading: 'How BaZi Compatibility Works',

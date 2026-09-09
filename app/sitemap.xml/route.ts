@@ -6,8 +6,8 @@ export const runtime = 'edge';
 // only when that page's content or internal links actually change — a blanket
 // "today" on every URL is a signal Google learns to discount.
 const ROUTE_LASTMOD: Record<string, string> = {
-  '': '2026-08-28',
-  'bazi-calculator/': '2026-08-28',
+  '': '2026-09-09',
+  'bazi-calculator/': '2026-09-09',
   'bazi-reading/': '2026-08-28',
   'bazi-chart-interpretation/': '2026-08-28',
   'how-to-read-bazi-chart/': '2026-08-28',
@@ -15,7 +15,7 @@ const ROUTE_LASTMOD: Record<string, string> = {
   'bazi-day-master-calculator/': '2026-07-08',
   'bazi-10-year-luck-calculator/': '2026-07-08',
   'bazi-compatibility-calculator/': '2026-07-08',
-  'bazi-compatibility-guide/': '2026-08-28',
+  'bazi-compatibility-guide/': '2026-09-09',
   'bazi-vs-chinese-zodiac/': '2026-08-28',
   'bazi-vs-feng-shui/': '2026-08-28',
   'four-pillars-of-destiny-calculator/': '2026-07-08',

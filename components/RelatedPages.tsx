@@ -16,7 +16,7 @@ const PAGE_META: Record<string, LinkItem> = {
   'bazi-calculator': { name: 'Core BaZi Calculator', href: '/bazi-calculator/', desc: 'Generate your complete Four Pillars of Destiny chart from your birth details.' },
   'bazi-day-master-calculator': { name: 'Day Master Calculator', href: '/bazi-day-master-calculator/', desc: 'Find your primary Heavenly Stem element and core nature.' },
   'bazi-10-year-luck-calculator': { name: '10-Year Luck Calculator', href: '/bazi-10-year-luck-calculator/', desc: 'Trace your major decade life-cycles and their timing.' },
-  'bazi-compatibility-calculator': { name: 'Compatibility Calculator', href: '/bazi-compatibility-calculator/', desc: 'Check elemental harmony between two BaZi charts.' },
+  'bazi-compatibility-calculator': { name: 'BaZi Compatibility Calculator', href: '/bazi-compatibility-calculator/', desc: 'Check elemental harmony between two BaZi charts.' },
   'four-pillars-of-destiny-calculator': { name: 'Four Pillars Calculator', href: '/four-pillars-of-destiny-calculator/', desc: 'The full Year, Month, Day, and Hour pillar breakdown.' },
   'bazi-yearly-forecast-calculator': { name: 'Yearly Forecast Calculator', href: '/bazi-yearly-forecast-calculator/', desc: 'Test how the current year stems interact with your Day Master.' },
   'bazi-reading': { name: 'Destiny Reading Guide', href: '/bazi-reading/', desc: 'A plain-English overview of Day Master, elements, and luck pillars.' },

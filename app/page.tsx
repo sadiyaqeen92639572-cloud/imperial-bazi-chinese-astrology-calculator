@@ -230,7 +230,7 @@ local_solar_time = birth_time + 4min × (longitude − timezone_standard_longitu
             Calculations use the <strong className="text-slate-400">lunar-javascript</strong> library for accurate solar term (节气) boundary detection required for Month Pillar accuracy. Day Master may vary by ±1 day for births near midnight or solar term crossings. Hour Pillar requires birth time (two-hour segments: 子时 23:00–01:00, 丑时 01:00–03:00, etc.). Longitude correction adjusts for local solar time deviation from standard timezone meridian.
           </p>
           <p className="text-base text-slate-500 leading-relaxed mt-4">
-            New to the system? Start with <Link href="/how-to-read-bazi-chart/" className="text-amber-500 hover:underline">how to read a BaZi chart</Link> step by step, then go deeper on <Link href="/bazi-chart-interpretation/" className="text-amber-500 hover:underline">pillar-by-pillar interpretation</Link> and <Link href="/bazi-personality-analysis/" className="text-amber-500 hover:underline">what your chart says about personality</Link>. For the raw four-column layout, use the <Link href="/four-pillars-of-destiny-calculator/" className="text-amber-500 hover:underline">Four Pillars of Destiny calculator</Link>.
+            New to the system? Start with <Link href="/how-to-read-bazi-chart/" className="text-amber-500 hover:underline">how to read a BaZi chart</Link> step by step, then go deeper on <Link href="/bazi-chart-interpretation/" className="text-amber-500 hover:underline">pillar-by-pillar interpretation</Link> and <Link href="/bazi-personality-analysis/" className="text-amber-500 hover:underline">what your chart says about personality</Link>. For the raw four-column layout, use the <Link href="/four-pillars-of-destiny-calculator/" className="text-amber-500 hover:underline">Four Pillars of Destiny Calculator</Link>.
           </p>
         </div>
       </section>
@@ -240,7 +240,7 @@ local_solar_time = birth_time + 4min × (longitude − timezone_standard_longitu
         <div className="bg-gradient-to-r from-slate-900 to-slate-900 border border-slate-850 p-8 sm:p-12 rounded-2xl space-y-6">
           <h2 className="text-xl sm:text-2xl font-serif text-slate-100 font-medium">Ready to discover your destiny profile?</h2>
           <p className="text-base sm:text-lg text-slate-400 max-w-xl mx-auto leading-relaxed">
-            Generate your high-accuracy four pillars report in seconds. Fully responsive and completely free of charge.
+            Generate your high-accuracy <Link href="/four-pillars-of-destiny-calculator/" className="text-amber-500 hover:underline">Four Pillars of Destiny Calculator</Link> report in seconds. Fully responsive and completely free of charge.
           </p>
           <div className="pt-2">
             <Link
